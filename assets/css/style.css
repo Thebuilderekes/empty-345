@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fbfbfb;
+}
+
+.navbar-nav {
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*General*/
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header section */
+header {
+  width: 100%;
+  height: 100%;
+}
+
+header .wuka-logo {
+  background: #d8d6d6;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+header .wuka-logo .logo {
+  font-size: 35px;
+  font-weight: bolder;
+  position: absolute;
+  top: 30%;
+  left: 2.5%;
+  text-decoration: none;
+  letter-spacing: 10px;
+  color: #000000;
+}
+
+header .main-header {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00000046), color-stop(35%, rgba(0, 0, 0, 0.294)), to(#0000003a)), url(/assets/img/back-img.jpg);
+  background-image: linear-gradient(90deg, #00000046 0%, rgba(0, 0, 0, 0.294) 35%, #0000003a 100%), url(/assets/img/back-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .main-header nav {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+}
+
+header .main-header nav .navbar-nav {
+  position: absolute;
+  z-index: 10;
+}
+
+header .main-header nav .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+header .main-header .bg-img .overlay {
+  background: #f3858511;
+  z-index: 10;
+}
+
+header .main-header .bg-img .overlay img {
+  width: 100%;
+  z-index: -10;
+  mix-blend-mode: darken;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  position: absolute;
+  top: 95%;
+  left: 18%;
+  text-align: center;
+  font-size: 300px;
+  z-index: 1;
+}
+
+.hero-text .btn-group {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-text .btn-group ul {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.hero-text .btn-group ul li {
+  display: inline;
+  list-style: none;
+}
+
+.hero-text .btn-group ul li a img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.hero-text .btn-group .btn {
+  margin: 0 20px;
+  padding: 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero-text .btn-group .btn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.hero-text .btn-group .btn .social {
+  display: block;
+}
+
+.hero-text .btn-group .booking-button {
+  background-color: #f35757;
+  font-weight: 700;
+}
+
+.hero-text .btn-group .about-button {
+  background-color: #2e73f5;
+  font-weight: 700;
+}
+
+.about-wuka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #f8e6e6;
+  height: 700px;
+}
+
+.about-wuka h2 {
+  border-radius: 20px;
+  font-size: 90px;
+  color: #fefeff;
+  font-weight: 700;
+  padding: 10px;
+  position: absolute;
+  margin-top: 260px;
+  background: #232631;
+  margin-left: -120px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.about-wuka h2 span {
+  color: #fa9b9b;
+}
+
+.about-wuka p {
+  margin: 100px 100px 150px 200px;
+  padding: 80px;
+  font-weight: bold;
+  font-size: 18px;
+  background: #fbd8c0;
+}
+
+footer {
+  width: 100%;
+  height: 628px;
+  background: #3b3d49;
+}
+
+footer .container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer .follow {
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+footer .follow p {
+  font-size: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  color: darkgrey;
+}
+
+footer .follow ul li {
+  display: inline;
+  padding: 0 10px;
+}
+
+footer .follow .footer-img {
+  background: #000000;
+}
+
+footer .follow .footer-img img {
+  margin-right: 900px;
+}
+/*# sourceMappingURL=style.css.map */
