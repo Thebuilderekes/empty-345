@@ -15,6 +15,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
+    overflow-x: hidden;
 }
 
 .navbar-nav {
@@ -46,8 +47,6 @@ html {
     width: 100%;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -56,12 +55,12 @@ header {
   width: 100%;
   height: 100%;
 
-
-  .wuka-logo {
+ .wuka-logo {
       background: rgb(216, 214, 214);
       width: 100%;
       height: 80px;
      position: relative;
+
       .logo {
         font-size: 35px;
         font-weight: bolder;
@@ -76,19 +75,18 @@ header {
   }
  
   .main-header {
-
-      width: 100%;
-      background-image: linear-gradient( 90deg, #00000046 0%, rgba(0, 0, 0, 0.294) 35%, #0000003a 100%), url(/assets/img/back-img.jpg);
+     width: 100%;
+      background-image: url(/assets/img/back-img.jpg);
       background-repeat: no-repeat;
       background-size: cover;
 
 
-      nav {
+     nav {
           background-color: white ;
           width: 100%;
           height: 80px;
 
-          .navbar-nav{
+          .navbar-nav {
             
            position: absolute;
            z-index: 10;
@@ -110,8 +108,8 @@ header {
     
       .bg-img {
        .overlay{
-
-        background: #f3858511;
+        width: 100%;
+        background: #0000001c;
         z-index: 10;
         img{
             width: 100%;
@@ -212,18 +210,18 @@ header {
       display: flex;
       flex-direction: row;
       background: #f8e6e6;
-      height: 700px;
+    //   height: 700px;
       
     h2 {
-        border-radius: 20px;
-        font-size: 90px;
+        // border-radius: 20px;
+        font-size: 60px;
         color: rgb(254, 254, 255);
         font-weight: 700;
         padding: 10px;
         position: absolute;
-         margin-top: 260px;
+         margin-top: 190px;
+         margin-left: 20px ;
          background: rgb(35, 38, 49);
-         margin-left: -120px;
         transform: rotate(-90deg);
 
         span {
@@ -261,8 +259,6 @@ p {
         //  width: 50%;
         margin-left: 20%;
         margin-top: 15%;
-    
-
       
          p{
             //  text-align: center;
@@ -281,16 +277,18 @@ p {
              }
          }
 
-          .footer-img {
-          background: #000000;
-            img {
-          margin-right: 900px;
-            }
+
+        }
+        //   .footer-img {
+    
+        //     img {
+        //   margin-right: 900px;
+        //     }
         
-         }
+        //  }
     }
 
-  }
+  
 
 
 
@@ -304,6 +302,261 @@ p {
   @media screen  and (min-width:601px) and (max-width:766px) {}
   @media screen  and (min-width:501px) and (max-width:600px) {}
   @media screen  and (min-width:414px) and (max-width:500px) {}
-  @media screen  and (min-width:376px) and (max-width:414px) {}
-  @media screen  and (min-width:360px) and (max-width:375px) {}
-  @media screen  and (min-width:320px) and (max-width:359px) {}
+  @media screen  and (min-width:375px) and (max-width:414px) {
+
+    
+    a {
+        text-decoration: none;
+    }
+    /*Header section */
+    header {
+      width: 100%;
+      height: 100%;
+    
+    
+      .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+         position: relative;
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+             position: absolute;
+             top: 30%;
+             left: 2.5%;
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+      }
+     
+      .main-header {
+    
+          width: 100%;
+          background-image: url(/assets/img/back-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+    
+          nav {
+              background-color: white ;
+              width: 100%;
+              height: 80px;
+    
+              .navbar-nav{
+                
+               position: absolute;
+               z-index: 10;
+               background-color: #ffffff;
+    
+    
+               .nav-item {
+                   
+                   .nav-link {
+                       color: #000000;
+                       text-transform: uppercase;
+                             font-weight: 900;
+                             padding: 10px 10px;
+                             font-size: 14px;
+                           
+                   }
+               }      
+                       
+                
+              }
+          }
+        
+          .bg-img {
+           .overlay{
+            width: 100%;
+            background: #0000001c;
+            z-index: 10;
+            img{
+                width: 100%;
+                z-index: -10;
+                mix-blend-mode:darken;
+            }
+    
+        }
+        }
+        
+    
+    }
+      
+    }
+    
+    
+      .hero-text {
+          
+            h1{
+                color: #ffffff;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 60px;
+                font-weight: bold;
+                position: absolute;
+                top: 45%;
+                left: 27%;
+                text-align: center;
+                z-index: 1;
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 60%;
+               left: 3%;
+               display: flex;
+               flex-direction: column;
+    
+               ul {
+               margin-top: -40px;
+                margin-left: 40px;
+                li {
+                 
+                   display: inline;
+                   list-style: none;
+    
+    
+               }
+    
+               
+               li a img:hover {
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+            }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                //    border-radius: 10px;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+                  .booking-button{
+                    background-color: #f35757;
+                     font-weight: 700;
+                  }
+    
+    
+               .about-button {
+                 
+                background-color: #2e73f5;
+                 font-weight: 700;
+    
+               }
+              
+    
+        }
+        }
+    
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #f8e6e6;
+          
+        h2 {
+            // border-radius: 20px;
+            font-size: 45px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            position: absolute;
+             margin-top: 130px;
+            
+             background: rgb(35, 38, 49);
+             margin-left: -100px;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+    p {
+        margin: 30px 30px 50px 70px;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        background: rgb(251, 216, 192);
+    
+    }
+        
+      }
+    
+    
+      footer {
+      width: 100%;
+    
+        // display: flex;
+        // justify-content: space-between;
+        background: #3b3d49;
+    
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        .follow {
+            //  width: 50%;
+            margin-left: 5%;
+            margin-top: 15%;
+        
+         p{
+                //  text-align: center;
+                 font-size: 40px;
+                 font-family: 'Archivo Black', sans-serif;
+                 color: darkgrey;
+                
+             }
+    
+             ul {
+    
+                // margin-left: 20px;
+                 li{
+                     display: inline;
+                     padding: 0 10px;
+                 }
+             }
+            }
+              .footer-img {
+              background: #000000;
+                img {
+              margin-right: 900px;
+                }
+            
+             }
+        
+    
+      }
+    
+  }
+  
+  @media screen  and (min-width:360px) and (max-width:374px) {
+  }
+    
+  @media screen  and (min-width:320px) and (max-width:359px) {
+
+
+
+  }
