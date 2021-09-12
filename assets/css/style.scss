@@ -6,6 +6,7 @@
 
 html{
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar-nav {
@@ -56,18 +57,26 @@ header {
       background: rgb(216, 214, 214);
       width: 100%;
       height: 80px;
-     position: relative;
+      padding: 10px 30px;
+     display: flex;
+  justify-content: space-between;
+   
 
       .logo {
         font-size: 35px;
         font-weight: bolder;
-         position: absolute;
-         top: 30%;
-         left: 2.5%;
+     
         text-decoration: none;
          letter-spacing: 10px;
         color: #000000;
         
+      }
+
+
+      .social-links {
+          a {
+              padding: 0 20px;
+          }
       }
   }
 
@@ -125,9 +134,15 @@ header {
 }
 
 @keyframes movement {
-    from {opacity: 0;}
-    to {opacity: 1;}
-   }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
 
 
   .hero-text {
@@ -136,13 +151,15 @@ header {
     a {
         text-decoration: underline;
         color: #000000;
+        background-color: #ffffff;
+        padding: 5px;
         position: absolute;
         font-size: 40px;
         font-weight: bolder;
-        top: 71%;
+        top: 70%;
         left: 10%;
         animation-name: movement;
-        animation-duration: 3s;
+        animation-duration: 7s;
 
         &:hover {
             color: #f35757;
@@ -162,7 +179,7 @@ header {
             font-size: 300px;   
             z-index: 1;
             animation-name: movement;
-            animation-duration: 6s;
+            animation-duration: 15s;
           
    }
            
@@ -312,20 +329,25 @@ p {
     
     
       .wuka-logo {
-          background: #d8d6d6;
-          width: 100%;
-          height: 80px;
-         position: relative;
-          .logo {
-            font-size: 35px;
-            font-weight: bolder;
-             position: absolute;
-             top: 30%;
-             left: 2.5%;
-            text-decoration: none;
-             letter-spacing: 10px;
-            color: #000000;
-            
+        background: rgb(216, 214, 214);
+        width: 100%;
+        height: 80px;
+        padding: 10px 30px;
+       display: flex;
+    justify-content: space-between;
+     
+
+    .social-links {
+        display: none;
+    }
+  
+        .logo {
+          font-size: 35px;
+          font-weight: bolder;
+       
+          text-decoration: none;
+           letter-spacing: 10px;
+          color: #000000;
           }
       }
      
@@ -396,7 +418,7 @@ p {
             top: 38%;
             left: 10%;
             animation-name: movement;
-            animation-duration: 3s;
+            animation-duration: 7s;
     
             &:hover {
                 color: #f35757;
@@ -560,20 +582,24 @@ p {
     
     
       .wuka-logo {
-          background: rgb(216, 214, 214);
-          width: 100%;
-          height: 80px;
-         position: relative;
-          .logo {
-            font-size: 35px;
-            font-weight: bolder;
-             position: absolute;
-             top: 30%;
-             left: 2.5%;
-            text-decoration: none;
-             letter-spacing: 10px;
-            color: #000000;
-            
+        background: rgb(216, 214, 214);
+        width: 100%;
+        height: 80px;
+        padding: 10px 30px;
+       display: flex;
+    justify-content: space-between;
+     
+    .social-links {
+        display: none;
+    }
+  
+        .logo {
+          font-size: 35px;
+          font-weight: bolder;
+       
+          text-decoration: none;
+           letter-spacing: 10px;
+          color: #000000;
           }
       }
      
@@ -645,7 +671,7 @@ p {
             top: 38%;
             left: 10%;
             animation-name: movement;
-            animation-duration: 3s;
+            animation-duration: 7s;
     
             &:hover {
                 color: #f35757;
@@ -804,19 +830,23 @@ p {
     
     
       .wuka-logo {
-          background: rgb(216, 214, 214);
-          width: 100%;
-          height: 80px;
-         position: relative;
-          .logo {
-            font-size: 35px;
-            font-weight: bolder;
-             position: absolute;
-             top: 30%;
-             left: 2.5%;
-            text-decoration: none;
-             letter-spacing: 10px;
-            color: #000000;
+        background: rgb(216, 214, 214);
+        width: 100%;
+        height: 80px;
+        padding: 10px 30px;
+       display: flex;
+    justify-content: space-between;
+     
+    .social-links {
+        display: none;
+    }
+        .logo {
+          font-size: 35px;
+          font-weight: bolder;
+       
+          text-decoration: none;
+           letter-spacing: 10px;
+          color: #000000;
             
           }
       }
@@ -888,7 +918,7 @@ p {
             top: 38%;
             left: 10%;
             animation-name: movement;
-            animation-duration: 3s;
+            animation-duration: 7s;
     
             &:hover {
                 color: #f35757;
@@ -1048,20 +1078,26 @@ p {
     
     
       .wuka-logo {
-          background: rgb(216, 214, 214);
-          width: 100%;
-          height: 80px;
-         position: relative;
-          .logo {
-            font-size: 35px;
-            font-weight: bolder;
-             position: absolute;
-             top: 30%;
-             left: 2.5%;
-            text-decoration: none;
-             letter-spacing: 10px;
-            color: #000000;
-            
+        background: rgb(216, 214, 214);
+        width: 100%;
+        height: 80px;
+        padding: 10px 30px;
+       display: flex;
+      justify-content: space-between;
+     
+      .social-links {
+        display: none;
+    }
+
+      .social-links {
+          display: none;
+      }
+        .logo {
+          font-size: 35px;
+          font-weight: bolder;
+          text-decoration: none;
+          letter-spacing: 10px;
+         color: #000000;
           }
       }
      
@@ -1132,7 +1168,7 @@ p {
             top: 43%;
             left: 10%;
             animation-name: movement;
-            animation-duration: 3s;
+            animation-duration: 7s;
     
             &:hover {
                 color: #f35757;
