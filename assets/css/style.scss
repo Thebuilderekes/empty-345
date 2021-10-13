@@ -148,23 +148,7 @@ header {
   .hero-text {
 
 
-    a {
-        text-decoration: underline;
-        color: #000000;
-        background-color: #ffffff;
-        padding: 5px;
-        position: absolute;
-        font-size: 40px;
-        font-weight: bolder;
-        top: 70%;
-        left: 10%;
-        animation-name: movement;
-        animation-duration: 7s;
-
-        &:hover {
-            color: #f35757;
-        }
-    }
+   
       
         h1{
             color: #232631;
@@ -191,26 +175,22 @@ header {
            display: flex;
            flex-direction: column;
 
-           ul {
-            margin-top: 50px;
-            margin-left: 90px;
-            li {
-               margin-left: 100px;
-               display: inline;
-               list-style: none;
-            
-               
-           }
+                            ul {
+                                margin-top: 50px;
+                                margin-left: 90px;
+                            
+                                li {
+                                list-style: none;       
+                           }
 
            
       
-           }
-        }
+                          }
+      }
             .btn {
                margin: 0 20px;
                padding: 20px;
                border: 2px solid white;
-            //    border-radius: 10px;
                background: transparent;
                color: #ffffff;
                font-size: 20px;
@@ -267,6 +247,39 @@ p {
   }
 
 
+  .music-section {
+      background-color: #C9DADF;
+      width: 100%;
+   
+     display: flex;
+     flex-direction: column ;
+     justify-content: center;
+     align-items: center;
+
+        .header-img{
+            margin: 50px 0;
+            img {
+                border-radius: 50%;
+            }
+         }
+
+
+         .music-link {
+             border: 1px solid #f35757;
+             border-radius: 5px;
+             width: 70%;
+             height: 70px;
+             margin: 20px 0;
+
+             &:hover {
+                 background-color: #fbfbfb;
+             }
+         }
+ 
+  }
+
+
+
   footer {
   width: 100%;
     background: #232631;
@@ -307,12 +320,881 @@ p {
 
 
 
-  @media screen  and (min-width:768px) and (max-width:1300px) {}
+  @media screen  and (min-width:768px) and (max-width:1000px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+    html {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /*Header section */
+    header {
+      width: 100%;
+      height: 100%;
+    
+     .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+          padding: 10px 30px;
+         display: flex;
+      justify-content: space-between;
+       
+    
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+         
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+    
+    
+          .social-links {
+              a {
+                  padding: 0 20px;
+              }
+          }
+      }
+    
+      
+     
+      .main-header {
+         width: 100%;
+          background-image: url(/assets/img/back-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+    
+         nav {
+              background-color: white ;
+              width: 100%;
+              height: 80px;
+    
+              .navbar-nav {
+                
+               position: absolute;
+               z-index: 10;
+    
+    
+               .nav-item {
+                   background-color: #ffffff;
+                   .nav-link {
+                       color: #000000;
+                       text-transform: uppercase;
+                             font-weight: 900;
+                             padding: 10px 50px;
+                             font-size: 14px;
+                           
+                   }
+               }
+              }
+          }
+        
+          .bg-img {
+           .overlay{
+            width: 100%;
+            background: #0000001c;
+            z-index: 10;
+            img{
+                width: 100%;
+                z-index: -10;
+                mix-blend-mode:darken;
+            }
+    
+        }
+        }
+        
+    
+    }
+      
+    }
+    
+    @keyframes movement {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+    }
+    
+    
+      .hero-text {
+    
+    
+       
+          
+            h1{
+                color: #232631;
+                opacity: 0.7;
+                font-family: 'Roboto', sans-serif;
+                font-size: 150px;
+                font-weight: bold;
+                position: absolute;
+                top: 40%;
+                left: 25%;
+                text-align: center;
+                z-index: 1;
+                animation-name: movement;
+                animation-duration: 15s;
+              
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 60%;
+               left: 3%;
+               display: flex;
+               flex-direction: column;
+    
+                                ul {
+                                    margin-top: 50px;
+                                    margin-left: 90px;
+                                
+                                    li {
+                                    list-style: none;       
+                               }
+    
+               
+          
+                              }
+          }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+            
+     }
+        
+    
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #B85863;
+    
+          
+        h2 {
+      
+            font-size: 60px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            position: absolute;
+             margin-top: 190px;
+             background: #232631;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+    p {
+        margin: 50px 150px 100px 200px;
+        padding: 60px;
+        font-weight: bold;
+        font-size: 18px;
+        background: #D9CFB9;
+    
+    }
+        
+      }
+    
+    
+      .music-section {
+          background-color: #C9DADF;
+          width: 100%;
+       
+         display: flex;
+         flex-direction: column ;
+         justify-content: center;
+         align-items: center;
+    
+            .header-img{
+                margin: 50px 0;
+                img {
+                    border-radius: 50%;
+                }
+             }
+    
+    
+             .music-link {
+                 border: 1px solid #f35757;
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
+             }
+     
+      }
+    
+    
+      footer {
+        width: 100%;
+          background: #232631;
+      
+          .container {
+              padding-left: 0;
+              padding-right: 0;
+              margin-left: 0;
+              margin-right: 0;
+          }
+      
+          .follow {
+              margin-left: 30%;
+              margin-top: 15%;
+            
+               p{
+                   font-size: 24px;
+                   text-align: center;
+                   font-family: 'Archivo Black', sans-serif;
+                   color: #f35757;
+                  
+               }
+      
+               ul {
+      
+             
+                   li{
+                       display: inline;
+                       padding: 20px 10px;
+                      
+
+                   
+                   }
+               }
+      
+      
+              }
+            
+          }
+      
+        }
+    
   
-  @media screen  and (min-width:601px) and (max-width:767px) {}
+  
+  @media screen  and (min-width:601px) and (max-width:767px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+    html {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /*Header section */
+    header {
+      width: 100%;
+      height: 100%;
+    
+     .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+          padding: 10px 30px;
+         display: flex;
+      justify-content: space-between;
+       
+    
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+         
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+    
+    
+          .social-links {
+              a {
+                  padding: 0 20px;
+              }
+          }
+      }
+    
+      
+     
+      .main-header {
+         width: 100%;
+          background-image: url(/assets/img/back-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+    
+         nav {
+              background-color: white ;
+              width: 100%;
+              height: 80px;
+    
+              .navbar-nav {
+                
+               position: absolute;
+               z-index: 10;
+    
+    
+               .nav-item {
+                   
+                   .nav-link {
+                       color: #000000;
+                       text-transform: uppercase;
+                             font-weight: 900;
+                             padding: 0 10px;
+                             font-size: 14px;
+                           
+                   }
+               }
+              }
+          }
+        
+          .bg-img {
+           .overlay{
+            width: 100%;
+            background: #0000001c;
+            z-index: 10;
+            img{
+                width: 100%;
+                z-index: -10;
+                mix-blend-mode:darken;
+            }
+    
+        }
+        }
+        
+    
+    }
+      
+    }
+    
+    @keyframes movement {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+    }
+    
+    
+      .hero-text {
+    
+    
+       
+          
+            h1{
+                color: #232631;
+                opacity: 0.7;
+                font-family: 'Roboto', sans-serif;
+                font-size: 150px;
+                font-weight: bold;
+                position: absolute;
+                top: 95%;
+                left: 18%;
+                text-align: center;
+                font-size: 300px;   
+                z-index: 1;
+                animation-name: movement;
+                animation-duration: 15s;
+              
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 60%;
+               left: 3%;
+               display: flex;
+               flex-direction: column;
+    
+                                ul {
+                                    margin-top: 50px;
+                                    margin-left: 90px;
+                                
+                                    li {
+                                    list-style: none;       
+                               }
+    
+               
+          
+                              }
+          }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+            
+     }
+        
+    
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #B85863;
+    
+          
+        h2 {
+      
+            font-size: 60px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            position: absolute;
+             margin-top: 190px;
+             background: #232631;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+    p {
+        margin: 100px 150px 150px 200px;
+        padding: 80px;
+        font-weight: bold;
+        font-size: 18px;
+        background: #D9CFB9;
+    
+    }
+        
+      }
+    
+    
+      .music-section {
+          background-color: #C9DADF;
+          width: 100%;
+       
+         display: flex;
+         flex-direction: column ;
+         justify-content: center;
+         align-items: center;
+    
+            .header-img{
+                margin: 50px 0;
+                img {
+                    border-radius: 50%;
+                }
+             }
+    
+    
+             .music-link {
+                 border: 1px solid #f35757;
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
+             }
+     
+      }
+    
+    
+    
+      footer {
+      width: 100%;
+        background: #232631;
+
+
+        .footer-img {
+
+            img {
+           display: none;
+            }
+        }
+    
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        .follow {
+            width: 100%;
+         margin-left: 35%;
+   
+          
+             p{
+                 font-size: 40px;
+                 font-family: 'Archivo Black', sans-serif;
+                 color: darkgrey;
+                
+             }
+    
+             ul {
+    
+           
+                 li{
+                     display: inline;
+                     padding: 0 10px;
+                 }
+             }
+    
+    
+            }
+          
+        }
+    
+
+  }
   @media screen  and (min-width:501px) and (max-width:600px) {
 
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+    html {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /*Header section */
+    header {
+      width: 100%;
+      height: 100%;
+    
+     .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+          padding: 10px 30px;
+         display: flex;
+      justify-content: space-between;
+       
+    
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+         
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+    
+    
+          .social-links {
+              a {
+                  padding: 0 20px;
+              }
+          }
+      }
+    
+      
+     
+      .main-header {
+         width: 100%;
+          background-image: url(/assets/img/back-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+    
+         nav {
+              background-color: white ;
+              width: 100%;
+              height: 80px;
+    
+              .navbar-nav {
+                
+               position: absolute;
+               z-index: 10;
+    
+    
+               .nav-item {
+                   
+                   .nav-link {
+                       color: #000000;
+                       text-transform: uppercase;
+                             font-weight: 900;
+                             padding: 0 10px;
+                             font-size: 14px;
+                           
+                   }
+               }
+              }
+          }
+        
+          .bg-img {
+           .overlay{
+            width: 100%;
+            background: #0000001c;
+            z-index: 10;
+            img{
+                width: 100%;
+                z-index: -10;
+                mix-blend-mode:darken;
+            }
+    
+        }
+        }
+        
+    
+    }
+      
+    }
+    
+    @keyframes movement {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+    }
+    
+    
+      .hero-text {
+    
+    
+       
+          
+            h1{
+                color: #232631;
+                opacity: 0.7;
+                font-family: 'Roboto', sans-serif;
+                font-size: 150px;
+                font-weight: bold;
+                position: absolute;
+                top: 95%;
+                left: 18%;
+                text-align: center;
+                font-size: 300px;   
+                z-index: 1;
+                animation-name: movement;
+                animation-duration: 15s;
+              
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 60%;
+               left: 3%;
+               display: flex;
+               flex-direction: column;
+    
+                                ul {
+                                    margin-top: 50px;
+                                    margin-left: 90px;
+                                
+                                    li {
+                                    list-style: none;       
+                               }
+    
+               
+          
+                              }
+          }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+            
+     }
+        
+    
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #B85863;
+    
+          
+        h2 {
+      
+            font-size: 60px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            position: absolute;
+             margin-top: 190px;
+             background: #232631;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+    p {
+        margin: 100px 150px 150px 200px;
+        padding: 80px;
+        font-weight: bold;
+        font-size: 18px;
+        background: #D9CFB9;
+    
+    }
+        
+      }
+    
+    
+      .music-section {
+          background-color: #C9DADF;
+          width: 100%;
+       
+         display: flex;
+         flex-direction: column ;
+         justify-content: center;
+         align-items: center;
+    
+            .header-img{
+                margin: 50px 0;
+                img {
+                    border-radius: 50%;
+                }
+             }
+    
+    
+             .music-link {
+                 border: 1px solid #f35757;
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
+             }
+     
+      }
+    
+    
+    
+      footer {
+      width: 100%;
+        background: #232631;
 
+
+        .footer-img {
+
+            img {
+           display: none;
+            }
+        }
+    
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        .follow {
+            width: 100%;
+            margin-right: 30%;
+   
+          
+             p{
+                 font-size: 40px;
+                 font-family: 'Archivo Black', sans-serif;
+                 color: darkgrey;
+                
+             }
+    
+             ul {
+    
+           
+                 li{
+                     display: inline;
+                     padding: 0 10px;
+                 }
+             }
+    
+    
+            }
+          
+        }
+    
 
   }
   @media screen  and (min-width:414px) and (max-width:500px) {
@@ -433,7 +1315,7 @@ p {
                 font-size: 60px;
                 font-weight: bold;
                 position: absolute;
-                top: 45%;
+                top: 40%;
                 left: 27%;
                 text-align: center;
                 z-index: 1;
@@ -517,7 +1399,7 @@ p {
     
         }
     p {
-        margin: 30px 30px 50px 70px;
+        margin: 30px 30px 50px 80px;
         padding: 20px;
         font-weight: bold;
         font-size: 14px;
@@ -537,18 +1419,17 @@ p {
             margin-left: 0;
             margin-right: 0;
         }
-    
         .follow {
-     
+            width: 100%;
             margin-left: 5%;
             margin-top: 15%;
         
          p{
-
-                 margin-left: 15%;
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
                  color: darkgrey;
+                 margin-left: 15%;
+           
                 
              }
     
@@ -566,6 +1447,10 @@ p {
     
   }
   @media screen  and (min-width:375px) and (max-width:413px) {
+
+    html {
+        overflow-x: hidden;
+    }
    body {
        width: 100%;
        height: 100%;
@@ -790,7 +1675,7 @@ p {
         }
     
         .follow {
-     
+            width: 100%;
             margin-left: 5%;
             margin-top: 15%;
         
@@ -798,12 +1683,13 @@ p {
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
                  color: darkgrey;
-                 margin-left: 13%;
+                 margin-left: 10%;
+           
                 
              }
     
              ul {
-
+                             display: flex;
                  li{
                      display: inline;
                      padding: 0 10px;
@@ -819,6 +1705,14 @@ p {
   
   @media screen  and (min-width:360px) and (max-width:374px) {
 
+    html {
+        overflow-x: hidden;
+    }
+   body {
+       width: 100%;
+       height: 100%;
+      
+   }
     
     a {
         text-decoration: none;
@@ -840,6 +1734,7 @@ p {
     .social-links {
         display: none;
     }
+  
         .logo {
           font-size: 35px;
           font-weight: bolder;
@@ -847,7 +1742,6 @@ p {
           text-decoration: none;
            letter-spacing: 10px;
           color: #000000;
-            
           }
       }
      
@@ -909,6 +1803,7 @@ p {
     
       .hero-text {
 
+
         a {
             text-decoration: underline;
             color: #000000;
@@ -925,7 +1820,6 @@ p {
             }
         }
           
-          
             h1{
                 color: #232631;
                 font-family: 'Roboto', sans-serif;
@@ -937,6 +1831,7 @@ p {
                 left: 27%;
                 text-align: center;
                 z-index: 1;
+                opacity: 0.6;
        }
                
         
@@ -968,7 +1863,6 @@ p {
                    margin: 0 20px;
                    padding: 20px;
                    border: 2px solid white;
-                //    border-radius: 10px;
                    background: transparent;
                    color: #ffffff;
                    font-size: 20px;
@@ -987,7 +1881,6 @@ p {
     
                }
         
-              
     
         }
         }
@@ -1008,7 +1901,7 @@ p {
              margin-top: 130px;
             
              background: #232631;
-             margin-left: -115px;
+             margin-left: -105px;
             transform: rotate(-90deg);
     
             span {
@@ -1018,7 +1911,7 @@ p {
         }
     p {
         margin: 30px 30px 50px 70px;
-        padding: 20px;
+        padding: 40px;
         font-weight: bold;
         font-size: 14px;
         background: #D9CFB9;
@@ -1039,7 +1932,7 @@ p {
         }
     
         .follow {
-     
+            width: 100%;
             margin-left: 5%;
             margin-top: 15%;
         
@@ -1047,18 +1940,20 @@ p {
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
                  color: darkgrey;
-                 margin-left: 8%;
+                 margin-left: 10%;
+           
                 
              }
     
              ul {
-                  margin-left: -5%;
+                             display: flex;
                  li{
                      display: inline;
                      padding: 0 10px;
                  }
              }
             }
+        
         
     
       }
@@ -1067,7 +1962,16 @@ p {
     
   @media screen  and (min-width:320px) and (max-width:359px) {
 
-
+    html {
+        overflow-x: hidden;
+    }
+   body {
+       width: 100%;
+       height: 100%;
+       overflow-x: hidden;
+      
+   }
+    
     a {
         text-decoration: none;
     }
@@ -1083,21 +1987,19 @@ p {
         height: 80px;
         padding: 10px 30px;
        display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
      
-      .social-links {
+    .social-links {
         display: none;
     }
-
-      .social-links {
-          display: none;
-      }
+  
         .logo {
           font-size: 35px;
           font-weight: bolder;
+       
           text-decoration: none;
-          letter-spacing: 10px;
-         color: #000000;
+           letter-spacing: 10px;
+          color: #000000;
           }
       }
      
@@ -1159,13 +2061,14 @@ p {
     
       .hero-text {
 
+
         a {
             text-decoration: underline;
             color: #000000;
             position: absolute;
             font-size: 16px;
             font-weight: bolder;
-            top: 43%;
+            top: 38%;
             left: 10%;
             animation-name: movement;
             animation-duration: 7s;
@@ -1175,7 +2078,6 @@ p {
             }
         }
           
-          
             h1{
                 color: #232631;
                 font-family: 'Roboto', sans-serif;
@@ -1184,16 +2086,16 @@ p {
                 font-weight: bold;
                 position: absolute;
                 top: 55%;
-                left: 22%;
-                opacity: 0.6;
+                left: 25%;
                 text-align: center;
                 z-index: 1;
+                opacity: 0.6;
        }
                
         
             .btn-group{
              position: absolute;
-               top: 35%;
+               top: 30%;
                left: 5%;
                display: flex;
                flex-direction: column;
@@ -1219,7 +2121,6 @@ p {
                    margin: 0 20px;
                    padding: 20px;
                    border: 2px solid white;
-                //    border-radius: 10px;
                    background: transparent;
                    color: #ffffff;
                    font-size: 20px;
@@ -1237,8 +2138,7 @@ p {
                 
     
                }
-              
-              
+        
     
         }
         }
@@ -1259,7 +2159,7 @@ p {
              margin-top: 130px;
             
              background: #232631;
-             margin-left: -100px;
+             margin-left: -105px;
             transform: rotate(-90deg);
     
             span {
@@ -1269,7 +2169,7 @@ p {
         }
     p {
         margin: 30px 30px 50px 70px;
-        padding: 20px;
+        padding: 30px;
         font-weight: bold;
         font-size: 14px;
         background: #D9CFB9;
@@ -1290,26 +2190,29 @@ p {
         }
     
         .follow {
-     
-            margin-left: 2%;
+            width: 100%;
+            margin-left: 4%;
             margin-top: 15%;
         
          p{
-                 font-size: 25px;
+                 font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
                  color: darkgrey;
-                 margin-left: 15%;
+                 margin-left: 10%;
+           
                 
              }
     
              ul {
-
+                             display: flex;
                  li{
                      display: inline;
-                     padding: 0 5px;
+                     padding: 0 10px;
                  }
              }
             }
+        
+        
     
       }
     
