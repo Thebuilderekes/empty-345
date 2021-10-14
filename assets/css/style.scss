@@ -136,7 +136,7 @@ header {
 @keyframes movement {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(40px);
+        -webkit-transform: translateY(80px);
     }
     100% {
         opacity: 1;
@@ -157,10 +157,10 @@ header {
             font-size: 150px;
             font-weight: bold;
             position: absolute;
-            top: 95%;
-            left: 18%;
+            top: 110%;
+            left: 7%;
             text-align: center;
-            font-size: 300px;   
+            font-size: 400px;   
             z-index: 1;
             animation-name: movement;
             animation-duration: 15s;
@@ -265,7 +265,11 @@ p {
 
 
          .music-link {
-             border: 1px solid #f35757;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+             border: 3px solid #f35757;
              border-radius: 5px;
              width: 70%;
              height: 70px;
@@ -273,6 +277,19 @@ p {
 
              &:hover {
                  background-color: #fbfbfb;
+                 color: blue;
+             }
+
+             a {
+                 text-decoration: none;
+                 color: black;
+                 font-size: 20px;
+                 font-weight: 700;
+
+                 &:hover {
+                     color: blue;
+                 }
+                 
              }
          }
  
@@ -298,7 +315,7 @@ p {
          p{
              font-size: 40px;
              font-family: 'Archivo Black', sans-serif;
-             color: darkgrey;
+             color: #c94759;
             
          }
 
@@ -309,6 +326,18 @@ p {
                  display: inline;
                  padding: 0 10px;
              }
+         }
+
+
+         .attribution {
+             margin: 70px;
+            .attribute {
+                font-size: 16px;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
          }
 
 
@@ -584,7 +613,7 @@ p {
                    font-size: 24px;
                    text-align: center;
                    font-family: 'Archivo Black', sans-serif;
-                   color: #f35757;
+                   color: #c94759;
                   
                }
       
@@ -600,6 +629,17 @@ p {
                    }
                }
       
+
+               .attribution {
+                margin: 60px;
+               .attribute {
+                   font-size: 16px;
+   
+                   a {
+                       text-decoration: underline;
+                   }
+               }
+            }
       
               }
             
@@ -677,12 +717,12 @@ p {
     
     
                .nav-item {
-                   
+                    background-color: #ffffff;
                    .nav-link {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 0 10px;
+                             padding: 10px 40px;
                              font-size: 14px;
                            
                    }
@@ -733,10 +773,10 @@ p {
                 font-size: 150px;
                 font-weight: bold;
                 position: absolute;
-                top: 95%;
-                left: 18%;
+                top: 70%;
+                left: 20%;
                 text-align: center;
-                font-size: 300px;   
+             
                 z-index: 1;
                 animation-name: movement;
                 animation-duration: 15s;
@@ -803,6 +843,7 @@ p {
             padding: 10px;
             position: absolute;
              margin-top: 190px;
+             margin-right: 100px;
              background: #232631;
             transform: rotate(-90deg);
     
@@ -812,8 +853,8 @@ p {
     
         }
     p {
-        margin: 100px 150px 150px 200px;
-        padding: 80px;
+        margin: 50px 80px 150px 200px;
+        padding: 60px;
         font-weight: bold;
         font-size: 18px;
         background: #D9CFB9;
@@ -841,16 +882,33 @@ p {
     
     
              .music-link {
-                 border: 1px solid #f35757;
-                 border-radius: 5px;
-                 width: 70%;
-                 height: 70px;
-                 margin: 20px 0;
-    
-                 &:hover {
-                     background-color: #fbfbfb;
-                 }
-             }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+   
+                border: 3px solid #f35757;
+                border-radius: 5px;
+                width: 70%;
+                height: 70px;
+                margin: 20px 0;
+   
+                &:hover {
+                    background-color: #fbfbfb;
+                   
+                   
+                   
+                 
+                }
+   
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 700;
+                    
+                    
+                }
+            }
      
       }
     
@@ -883,7 +941,7 @@ p {
              p{
                  font-size: 40px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
+                 color: #c94759;
                 
              }
     
@@ -1135,16 +1193,28 @@ p {
     
     
              .music-link {
-                 border: 1px solid #f35757;
-                 border-radius: 5px;
-                 width: 70%;
-                 height: 70px;
-                 margin: 20px 0;
-    
-                 &:hover {
-                     background-color: #fbfbfb;
-                 }
-             }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+   
+                border: 3px solid #f35757;
+                border-radius: 5px;
+                width: 70%;
+                height: 70px;
+                margin: 20px 0;
+   
+                &:hover {
+                    background-color: #fbfbfb;
+                }
+   
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 700;
+                    
+                }
+            }
      
       }
     
@@ -1177,7 +1247,7 @@ p {
              p{
                  font-size: 40px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
+                 color: #c94759;
                 
              }
     
@@ -1409,6 +1479,50 @@ p {
         
       }
 
+
+      .music-section {
+        background-color: #C9DADF;
+        width: 100%;
+     
+       display: flex;
+       flex-direction: column ;
+       justify-content: center;
+       align-items: center;
+  
+          .header-img{
+              margin: 50px 0;
+              img {
+                  border-radius: 50%;
+              }
+           }
+  
+  
+           .music-link {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+ 
+              border: 3px solid #f35757;
+              border-radius: 5px;
+              width: 80%;
+              height: 70px;
+              margin: 20px 0;
+ 
+              &:hover {
+                  background-color: #fbfbfb;
+              }
+ 
+              a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 16px;
+                  font-weight: 700;
+                  
+              }
+          }
+   
+    }
+
       footer {
       width: 100%;
         background: #232631;
@@ -1427,9 +1541,8 @@ p {
          p{
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
                  margin-left: 15%;
-           
+                 color: #c94759;
                 
              }
     
@@ -1440,6 +1553,17 @@ p {
                      padding: 0 10px;
                  }
              }
+
+             .attribution {
+                margin: 24px;
+               .attribute {
+                   font-size: 16px;
+   
+                   a {
+                       text-decoration: underline;
+                   }
+               }
+            }
             }
         
     
@@ -1663,6 +1787,49 @@ p {
         
       }
 
+
+      .music-section {
+        background-color: #C9DADF;
+        width: 100%;
+     
+       display: flex;
+       flex-direction: column ;
+       justify-content: center;
+       align-items: center;
+  
+          .header-img{
+              margin: 50px 0;
+              img {
+                  border-radius: 50%;
+              }
+           }
+  
+  
+           .music-link {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+ 
+              border: 3px solid #f35757;
+              border-radius: 5px;
+              width: 80%;
+              height: 70px;
+              margin: 20px 0;
+ 
+              &:hover {
+                  background-color: #fbfbfb;
+              }
+ 
+              a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 16px;
+                  font-weight: 700;
+                  
+              }
+          }
+   
+    }
       footer {
       width: 100%;
         background: #232631;
@@ -1682,9 +1849,8 @@ p {
          p{
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
                  margin-left: 10%;
-           
+                 color: #c94759;
                 
              }
     
@@ -1920,6 +2086,49 @@ p {
         
       }
 
+      .music-section {
+        background-color: #C9DADF;
+        width: 100%;
+     
+       display: flex;
+       flex-direction: column ;
+       justify-content: center;
+       align-items: center;
+  
+          .header-img{
+              margin: 50px 0;
+              img {
+                  border-radius: 50%;
+              }
+           }
+  
+  
+           .music-link {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+ 
+              border: 3px solid #f35757;
+              border-radius: 5px;
+              width: 80%;
+              height: 70px;
+              margin: 20px 0;
+ 
+              &:hover {
+                  background-color: #fbfbfb;
+              }
+ 
+              a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 16px;
+                  font-weight: 700;
+                  
+              }
+          }
+   
+    }
+
       footer {
       width: 100%;
         background: #232631;
@@ -1933,14 +2142,14 @@ p {
     
         .follow {
             width: 100%;
-            margin-left: 5%;
+            margin-left: 1%;
             margin-top: 15%;
         
          p{
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
-                 margin-left: 10%;
+                 color: #c94759;
+                 margin-left: 12%;
            
                 
              }
@@ -1952,6 +2161,18 @@ p {
                      padding: 0 10px;
                  }
              }
+
+
+             .attribution {
+                margin: 40px;
+               .attribute {
+                   font-size: 16px;
+   
+                   a {
+                       text-decoration: underline;
+                   }
+               }
+            }
             }
         
         
@@ -1968,7 +2189,7 @@ p {
    body {
        width: 100%;
        height: 100%;
-       overflow-x: hidden;
+       overflow: hidden;
       
    }
     
@@ -2177,6 +2398,48 @@ p {
     }
         
       }
+      .music-section {
+        background-color: #C9DADF;
+        width: 100%;
+     
+       display: flex;
+       flex-direction: column ;
+       justify-content: center;
+       align-items: center;
+  
+          .header-img{
+              margin: 50px 0;
+              img {
+                  border-radius: 50%;
+              }
+           }
+  
+  
+           .music-link {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+ 
+              border: 3px solid #f35757;
+              border-radius: 5px;
+              width: 80%;
+              height: 70px;
+              margin: 20px 0;
+ 
+              &:hover {
+                  background-color: #fbfbfb;
+              }
+ 
+              a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 14px;
+                  font-weight: 700;
+                  
+              }
+          }
+   
+    }
 
       footer {
       width: 100%;
@@ -2191,14 +2454,14 @@ p {
     
         .follow {
             width: 100%;
-            margin-left: 4%;
+            margin-left: -4%;
             margin-top: 15%;
         
          p{
                  font-size: 30px;
                  font-family: 'Archivo Black', sans-serif;
-                 color: darkgrey;
-                 margin-left: 10%;
+                 color: #c94759;
+                 margin-left: 13%;
            
                 
              }
@@ -2210,6 +2473,18 @@ p {
                      padding: 0 10px;
                  }
              }
+
+
+             .attribution {
+                margin: 30px;
+               .attribute {
+                   font-size: 14px;
+   
+                   a {
+                       text-decoration: underline;
+                   }
+               }
+            }
             }
         
         
@@ -2218,3 +2493,6 @@ p {
     
 
   }
+
+
+

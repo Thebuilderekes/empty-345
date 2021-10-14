@@ -119,7 +119,7 @@ header .main-header .bg-img .overlay img {
 @-webkit-keyframes movement {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(40px);
+    -webkit-transform: translateY(80px);
   }
   100% {
     opacity: 1;
@@ -130,7 +130,7 @@ header .main-header .bg-img .overlay img {
 @keyframes movement {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(40px);
+    -webkit-transform: translateY(80px);
   }
   100% {
     opacity: 1;
@@ -145,10 +145,10 @@ header .main-header .bg-img .overlay img {
   font-size: 150px;
   font-weight: bold;
   position: absolute;
-  top: 95%;
-  left: 18%;
+  top: 110%;
+  left: 7%;
   text-align: center;
-  font-size: 300px;
+  font-size: 400px;
   z-index: 1;
   -webkit-animation-name: movement;
           animation-name: movement;
@@ -261,7 +261,16 @@ header .main-header .bg-img .overlay img {
 }
 
 .music-section .music-link {
-  border: 1px solid #f35757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #f35757;
   border-radius: 5px;
   width: 70%;
   height: 70px;
@@ -270,6 +279,18 @@ header .main-header .bg-img .overlay img {
 
 .music-section .music-link:hover {
   background-color: #fbfbfb;
+  color: blue;
+}
+
+.music-section .music-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.music-section .music-link a:hover {
+  color: blue;
 }
 
 footer {
@@ -292,12 +313,24 @@ footer .follow {
 footer .follow p {
   font-size: 40px;
   font-family: 'Archivo Black', sans-serif;
-  color: darkgrey;
+  color: #c94759;
 }
 
 footer .follow ul li {
   display: inline;
   padding: 0 10px;
+}
+
+footer .follow .attribution {
+  margin: 70px;
+}
+
+footer .follow .attribution .attribute {
+  font-size: 16px;
+}
+
+footer .follow .attribution .attribute a {
+  text-decoration: underline;
 }
 
 /*----------- MEDIA QUERIES-----*/
@@ -530,11 +563,20 @@ footer .follow ul li {
     font-size: 24px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #f35757;
+    color: #c94759;
   }
   footer .follow ul li {
     display: inline;
     padding: 20px 10px;
+  }
+  footer .follow .attribution {
+    margin: 60px;
+  }
+  footer .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 
@@ -592,11 +634,14 @@ footer .follow ul li {
     position: absolute;
     z-index: 10;
   }
+  header .main-header nav .navbar-nav .nav-item {
+    background-color: #ffffff;
+  }
   header .main-header nav .navbar-nav .nav-item .nav-link {
     color: #000000;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 0 10px;
+    padding: 10px 40px;
     font-size: 14px;
   }
   header .main-header .bg-img .overlay {
@@ -636,10 +681,9 @@ footer .follow ul li {
     font-size: 150px;
     font-weight: bold;
     position: absolute;
-    top: 95%;
-    left: 18%;
+    top: 70%;
+    left: 20%;
     text-align: center;
-    font-size: 300px;
     z-index: 1;
     -webkit-animation-name: movement;
             animation-name: movement;
@@ -700,6 +744,7 @@ footer .follow ul li {
     padding: 10px;
     position: absolute;
     margin-top: 190px;
+    margin-right: 100px;
     background: #232631;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -708,8 +753,8 @@ footer .follow ul li {
     color: #fa9b9b;
   }
   .about-wuka p {
-    margin: 100px 150px 150px 200px;
-    padding: 80px;
+    margin: 50px 80px 150px 200px;
+    padding: 60px;
     font-weight: bold;
     font-size: 18px;
     background: #D9CFB9;
@@ -738,7 +783,16 @@ footer .follow ul li {
     border-radius: 50%;
   }
   .music-section .music-link {
-    border: 1px solid #f35757;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
     border-radius: 5px;
     width: 70%;
     height: 70px;
@@ -746,6 +800,12 @@ footer .follow ul li {
   }
   .music-section .music-link:hover {
     background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
   }
   footer {
     width: 100%;
@@ -767,7 +827,7 @@ footer .follow ul li {
   footer .follow p {
     font-size: 40px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
+    color: #c94759;
   }
   footer .follow ul li {
     display: inline;
@@ -975,7 +1035,16 @@ footer .follow ul li {
     border-radius: 50%;
   }
   .music-section .music-link {
-    border: 1px solid #f35757;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
     border-radius: 5px;
     width: 70%;
     height: 70px;
@@ -983,6 +1052,12 @@ footer .follow ul li {
   }
   .music-section .music-link:hover {
     background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
   }
   footer {
     width: 100%;
@@ -1004,7 +1079,7 @@ footer .follow ul li {
   footer .follow p {
     font-size: 40px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
+    color: #c94759;
   }
   footer .follow ul li {
     display: inline;
@@ -1181,6 +1256,54 @@ footer .follow ul li {
     font-size: 14px;
     background: #D9CFB9;
   }
+  .music-section {
+    background-color: #C9DADF;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music-section .header-img {
+    margin: 50px 0;
+  }
+  .music-section .header-img img {
+    border-radius: 50%;
+  }
+  .music-section .music-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
+    border-radius: 5px;
+    width: 80%;
+    height: 70px;
+    margin: 20px 0;
+  }
+  .music-section .music-link:hover {
+    background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
   footer {
     width: 100%;
     background: #232631;
@@ -1199,8 +1322,8 @@ footer .follow ul li {
   footer .follow p {
     font-size: 30px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
     margin-left: 15%;
+    color: #c94759;
   }
   footer .follow ul {
     margin-left: 3%;
@@ -1208,6 +1331,15 @@ footer .follow ul li {
   footer .follow ul li {
     display: inline;
     padding: 0 10px;
+  }
+  footer .follow .attribution {
+    margin: 24px;
+  }
+  footer .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 
@@ -1388,6 +1520,54 @@ footer .follow ul li {
     font-size: 14px;
     background: #D9CFB9;
   }
+  .music-section {
+    background-color: #C9DADF;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music-section .header-img {
+    margin: 50px 0;
+  }
+  .music-section .header-img img {
+    border-radius: 50%;
+  }
+  .music-section .music-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
+    border-radius: 5px;
+    width: 80%;
+    height: 70px;
+    margin: 20px 0;
+  }
+  .music-section .music-link:hover {
+    background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
   footer {
     width: 100%;
     background: #232631;
@@ -1406,8 +1586,8 @@ footer .follow ul li {
   footer .follow p {
     font-size: 30px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
     margin-left: 10%;
+    color: #c94759;
   }
   footer .follow ul {
     display: -webkit-box;
@@ -1597,6 +1777,54 @@ footer .follow ul li {
     font-size: 14px;
     background: #D9CFB9;
   }
+  .music-section {
+    background-color: #C9DADF;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music-section .header-img {
+    margin: 50px 0;
+  }
+  .music-section .header-img img {
+    border-radius: 50%;
+  }
+  .music-section .music-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
+    border-radius: 5px;
+    width: 80%;
+    height: 70px;
+    margin: 20px 0;
+  }
+  .music-section .music-link:hover {
+    background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+  }
   footer {
     width: 100%;
     background: #232631;
@@ -1609,14 +1837,14 @@ footer .follow ul li {
   }
   footer .follow {
     width: 100%;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-top: 15%;
   }
   footer .follow p {
     font-size: 30px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
-    margin-left: 10%;
+    color: #c94759;
+    margin-left: 12%;
   }
   footer .follow ul {
     display: -webkit-box;
@@ -1627,6 +1855,15 @@ footer .follow ul li {
     display: inline;
     padding: 0 10px;
   }
+  footer .follow .attribution {
+    margin: 40px;
+  }
+  footer .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .follow .attribution .attribute a {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 359px) {
@@ -1636,7 +1873,7 @@ footer .follow ul li {
   body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   a {
     text-decoration: none;
@@ -1807,6 +2044,54 @@ footer .follow ul li {
     font-size: 14px;
     background: #D9CFB9;
   }
+  .music-section {
+    background-color: #C9DADF;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music-section .header-img {
+    margin: 50px 0;
+  }
+  .music-section .header-img img {
+    border-radius: 50%;
+  }
+  .music-section .music-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px solid #f35757;
+    border-radius: 5px;
+    width: 80%;
+    height: 70px;
+    margin: 20px 0;
+  }
+  .music-section .music-link:hover {
+    background-color: #fbfbfb;
+  }
+  .music-section .music-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+  }
   footer {
     width: 100%;
     background: #232631;
@@ -1819,14 +2104,14 @@ footer .follow ul li {
   }
   footer .follow {
     width: 100%;
-    margin-left: 4%;
+    margin-left: -4%;
     margin-top: 15%;
   }
   footer .follow p {
     font-size: 30px;
     font-family: 'Archivo Black', sans-serif;
-    color: darkgrey;
-    margin-left: 10%;
+    color: #c94759;
+    margin-left: 13%;
   }
   footer .follow ul {
     display: -webkit-box;
@@ -1836,6 +2121,15 @@ footer .follow ul li {
   footer .follow ul li {
     display: inline;
     padding: 0 10px;
+  }
+  footer .follow .attribution {
+    margin: 30px;
+  }
+  footer .follow .attribution .attribute {
+    font-size: 14px;
+  }
+  footer .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=style.css.map */
