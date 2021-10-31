@@ -7,36 +7,12 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fbfbfb;
-  overflow: hidden;
-}
-
-.navbar-nav {
-  background-color: transparent;
-  margin: 0 auto;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /*General*/
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -152,8 +128,8 @@ header .main-header .bg-img .overlay img {
   z-index: 1;
   -webkit-animation-name: movement;
           animation-name: movement;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 .hero-text .btn-group {
@@ -253,11 +229,17 @@ header .main-header .bg-img .overlay img {
 }
 
 .music-section .header-img {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .music-section .header-img img {
   border-radius: 50%;
+}
+
+.music-section .header-img .header-img-title {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .music-section .music-link {
@@ -275,6 +257,10 @@ header .main-header .bg-img .overlay img {
   width: 70%;
   height: 70px;
   margin: 20px 0;
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 }
 
 .music-section .music-link:hover {
@@ -285,6 +271,7 @@ header .main-header .bg-img .overlay img {
 .music-section .music-link a {
   text-decoration: none;
   color: black;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -299,42 +286,44 @@ footer {
 }
 
 footer .container {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .follow {
-  margin-left: 20%;
-  margin-top: 15%;
-}
-
-footer .follow p {
+footer .container .follow p {
   font-size: 40px;
   font-family: 'Archivo Black', sans-serif;
   color: #c94759;
 }
 
-footer .follow ul li {
+footer .container .follow ul li {
   display: inline;
   padding: 0 10px;
 }
 
-footer .follow .attribution {
+footer .container .follow .attribution {
   margin: 70px;
 }
 
-footer .follow .attribution .attribute {
+footer .container .follow .attribution .attribute {
   font-size: 16px;
 }
 
-footer .follow .attribution .attribute a {
+footer .container .follow .attribution .attribute a {
   text-decoration: underline;
 }
 
 /*----------- MEDIA QUERIES-----*/
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   body {
     width: 100%;
     height: 100%;
@@ -550,32 +539,31 @@ footer .follow .attribution .attribute a {
     background: #232631;
   }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  footer .follow {
-    margin-left: 30%;
-    margin-top: 15%;
-  }
-  footer .follow p {
-    font-size: 24px;
+  footer .container .follow p {
+    font-size: 30px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
     color: #c94759;
   }
-  footer .follow ul li {
+  footer .container .follow ul li {
     display: inline;
-    padding: 20px 10px;
+    padding: 0 10px;
   }
-  footer .follow .attribution {
-    margin: 60px;
+  footer .container .follow .attribution {
+    margin: 70px;
   }
-  footer .follow .attribution .attribute {
+  footer .container .follow .attribution .attribute {
     font-size: 16px;
   }
-  footer .follow .attribution .attribute a {
+  footer .container .follow .attribution .attribute a {
     text-decoration: underline;
   }
 }
@@ -744,7 +732,6 @@ footer .follow .attribution .attribute a {
     padding: 10px;
     position: absolute;
     margin-top: 190px;
-    margin-right: 100px;
     background: #232631;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -753,7 +740,7 @@ footer .follow .attribution .attribute a {
     color: #fa9b9b;
   }
   .about-wuka p {
-    margin: 50px 80px 150px 200px;
+    margin: 50px 150px 100px 200px;
     padding: 60px;
     font-weight: bold;
     font-size: 18px;
@@ -811,39 +798,51 @@ footer .follow .attribution .attribute a {
     width: 100%;
     background: #232631;
   }
-  footer .footer-img img {
-    display: none;
-  }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0 0 0;
+    margin: 0;
+    max-width: 100%;
   }
-  footer .follow {
+  footer .container .footer-img {
     width: 100%;
-    margin-left: 35%;
   }
-  footer .follow p {
-    font-size: 40px;
+  footer .container .footer-img img {
+    width: 100%;
+  }
+  footer .container .follow {
+    margin-top: 30px;
+  }
+  footer .container .follow p {
+    font-size: 32px;
+    text-align: center;
     font-family: 'Archivo Black', sans-serif;
     color: #c94759;
   }
-  footer .follow ul li {
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
+  }
+  footer .container .follow .attribution {
+    margin: 70px;
+  }
+  footer .container .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .container .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
-  body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  html {
-    width: 100%;
-  }
   a {
     text-decoration: none;
   }
@@ -864,15 +863,15 @@ footer .follow .attribution .attribute a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  header .wuka-logo .social-links {
+    display: none;
+  }
   header .wuka-logo .logo {
     font-size: 35px;
     font-weight: bolder;
     text-decoration: none;
     letter-spacing: 10px;
     color: #000000;
-  }
-  header .wuka-logo .social-links a {
-    padding: 0 20px;
   }
   header .main-header {
     width: 100%;
@@ -888,12 +887,13 @@ footer .follow .attribution .attribute a {
   header .main-header nav .navbar-nav {
     position: absolute;
     z-index: 10;
+    background-color: #ffffff;
   }
   header .main-header nav .navbar-nav .nav-item .nav-link {
     color: #000000;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 0 10px;
+    padding: 10px 10px;
     font-size: 14px;
   }
   header .main-header .bg-img .overlay {
@@ -906,47 +906,37 @@ footer .follow .attribution .attribute a {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  @-webkit-keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
   }
-  @keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
+  .hero-text a:hover {
+    color: #f35757;
   }
   .hero-text h1 {
     color: #232631;
-    opacity: 0.7;
     font-family: 'Roboto', sans-serif;
-    font-size: 150px;
+    letter-spacing: 3px;
+    font-size: 80px;
     font-weight: bold;
     position: absolute;
-    top: 95%;
-    left: 18%;
-    text-align: center;
-    font-size: 300px;
+    top: 60%;
+    left: 30%;
     z-index: 1;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
   }
   .hero-text .btn-group {
     position: absolute;
-    top: 60%;
-    left: 3%;
+    top: 32%;
+    left: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -956,13 +946,21 @@ footer .follow .attribution .attribute a {
             flex-direction: column;
   }
   .hero-text .btn-group ul {
-    margin-top: 50px;
-    margin-left: 90px;
+    margin-top: -40px;
+    margin-left: 20px;
   }
   .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
     list-style: none;
   }
-  .hero-text .btn {
+  .hero-text .btn-group ul li a img:hover {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
     margin: 0 20px;
     padding: 20px;
     border: 2px solid white;
@@ -971,13 +969,13 @@ footer .follow .attribution .attribute a {
     font-size: 20px;
     font-weight: bold;
   }
-  .hero-text .btn:hover {
+  .hero-text .btn-group .btn:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
-  .hero-text .btn .social {
+  .hero-text .btn-group .btn .social {
     display: block;
   }
   .about-wuka {
@@ -991,13 +989,14 @@ footer .follow .attribution .attribute a {
     background: #B85863;
   }
   .about-wuka h2 {
-    font-size: 60px;
+    font-size: 32px;
     color: #fefeff;
     font-weight: 700;
     padding: 10px;
     position: absolute;
-    margin-top: 190px;
+    margin-top: 97px;
     background: #232631;
+    margin-left: -50px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
@@ -1005,10 +1004,10 @@ footer .follow .attribution .attribute a {
     color: #fa9b9b;
   }
   .about-wuka p {
-    margin: 100px 150px 150px 200px;
-    padding: 80px;
+    margin: 30px 30px 50px 80px;
+    padding: 20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     background: #D9CFB9;
   }
   .music-section {
@@ -1046,7 +1045,7 @@ footer .follow .attribution .attribute a {
             align-items: center;
     border: 3px solid #f35757;
     border-radius: 5px;
-    width: 70%;
+    width: 80%;
     height: 70px;
     margin: 20px 0;
   }
@@ -1056,34 +1055,44 @@ footer .follow .attribution .attribute a {
   .music-section .music-link a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
   }
   footer {
     width: 100%;
     background: #232631;
   }
-  footer .footer-img img {
-    display: none;
-  }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
-  footer .follow {
-    width: 100%;
-    margin-right: 30%;
+  footer .container .follow {
+    margin-top: 30px;
   }
-  footer .follow p {
-    font-size: 40px;
+  footer .container .follow p {
+    font-size: 32px;
+    text-align: center;
     font-family: 'Archivo Black', sans-serif;
     color: #c94759;
   }
-  footer .follow ul li {
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
+  }
+  footer .container .follow .attribution {
+    margin: 70px;
+  }
+  footer .container .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .container .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 
@@ -1235,14 +1244,14 @@ footer .follow .attribution .attribute a {
     background: #B85863;
   }
   .about-wuka h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: #fefeff;
     font-weight: 700;
     padding: 10px;
     position: absolute;
-    margin-top: 130px;
+    margin-top: 110px;
     background: #232631;
-    margin-left: -100px;
+    margin-left: -80px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
@@ -1309,36 +1318,35 @@ footer .follow .attribution .attribute a {
     background: #232631;
   }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
-  footer .follow {
-    width: 100%;
-    margin-left: 5%;
-    margin-top: 15%;
+  footer .container .follow {
+    margin-top: 30px;
   }
-  footer .follow p {
-    font-size: 30px;
+  footer .container .follow p {
+    font-size: 32px;
+    text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    margin-left: 15%;
     color: #c94759;
   }
-  footer .follow ul {
-    margin-left: 3%;
-  }
-  footer .follow ul li {
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
   }
-  footer .follow .attribution {
-    margin: 24px;
+  footer .container .follow .attribution {
+    margin: 70px;
   }
-  footer .follow .attribution .attribute {
+  footer .container .follow .attribution .attribute {
     font-size: 16px;
   }
-  footer .follow .attribution .attribute a {
+  footer .container .follow .attribution .attribute a {
     text-decoration: underline;
   }
 }
@@ -1573,30 +1581,36 @@ footer .follow .attribution .attribute a {
     background: #232631;
   }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer .follow {
-    width: 100%;
-    margin-left: 5%;
-    margin-top: 15%;
-  }
-  footer .follow p {
-    font-size: 30px;
-    font-family: 'Archivo Black', sans-serif;
-    margin-left: 10%;
-    color: #c94759;
-  }
-  footer .follow ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
-  footer .follow ul li {
+  footer .container .follow {
+    margin-top: 30px;
+  }
+  footer .container .follow p {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color: #c94759;
+  }
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
+  }
+  footer .container .follow .attribution {
+    margin: 70px;
+  }
+  footer .container .follow .attribution .attribute {
+    font-size: 16px;
+  }
+  footer .container .follow .attribution .attribute a {
+    text-decoration: underline;
   }
 }
 
@@ -1830,38 +1844,35 @@ footer .follow .attribution .attribute a {
     background: #232631;
   }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer .follow {
-    width: 100%;
-    margin-left: 1%;
-    margin-top: 15%;
-  }
-  footer .follow p {
-    font-size: 30px;
-    font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
-    margin-left: 12%;
-  }
-  footer .follow ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
-  footer .follow ul li {
+  footer .container .follow {
+    margin-top: 30px;
+  }
+  footer .container .follow p {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color: #c94759;
+  }
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
   }
-  footer .follow .attribution {
-    margin: 40px;
+  footer .container .follow .attribution {
+    margin: 70px;
   }
-  footer .follow .attribution .attribute {
+  footer .container .follow .attribution .attribute {
     font-size: 16px;
   }
-  footer .follow .attribution .attribute a {
+  footer .container .follow .attribution .attribute a {
     text-decoration: underline;
   }
 }
@@ -2097,38 +2108,38 @@ footer .follow .attribution .attribute a {
     background: #232631;
   }
   footer .container {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  footer .follow {
-    width: 100%;
-    margin-left: -4%;
-    margin-top: 15%;
-  }
-  footer .follow p {
-    font-size: 30px;
-    font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
-    margin-left: 13%;
-  }
-  footer .follow ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
   }
-  footer .follow ul li {
+  footer .container .follow {
+    margin-top: 30px;
+  }
+  footer .container .follow p {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    color: #c94759;
+  }
+  footer .container .follow ul {
+    margin-left: -10px;
+  }
+  footer .container .follow ul li {
     display: inline;
-    padding: 0 10px;
   }
-  footer .follow .attribution {
-    margin: 30px;
+  footer .container .follow .attribution {
+    margin: 70px;
   }
-  footer .follow .attribution .attribute {
+  footer .container .follow .attribution .attribute {
     font-size: 14px;
   }
-  footer .follow .attribution .attribute a {
+  footer .container .follow .attribution .attribute a {
     text-decoration: underline;
   }
 }
