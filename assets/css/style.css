@@ -238,6 +238,7 @@ header .main-header .bg-img .overlay img {
 
 .music-section .header-img .header-img-title {
   margin-top: 20px;
+  font-family: 'Archivo Black', sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -1180,11 +1181,11 @@ footer .container .follow .attribution .attribute a {
     color: #232631;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bold;
     position: absolute;
-    top: 40%;
-    left: 27%;
+    top: 60%;
+    left: 28%;
     text-align: center;
     z-index: 1;
   }
@@ -1326,7 +1327,7 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
   }
   footer .container .follow {
     margin-top: 30px;
