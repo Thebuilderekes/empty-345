@@ -274,7 +274,7 @@ header .main-header .bg-img .overlay img {
   box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
-  width: 70%;
+  width: 50%;
   height: 70px;
   margin: 20px 0;
   -webkit-animation-name: movement;
@@ -284,7 +284,7 @@ header .main-header .bg-img .overlay img {
 }
 
 .projects-section .music-link:hover {
-  background-color: #fbfbfb;
+  background-color: #f37a7a;
   color: blue;
 }
 

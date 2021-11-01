@@ -279,14 +279,14 @@ p {
              box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
-             width: 70%;
+             width: 50%;
              height: 70px;
              margin: 20px 0;
              animation-name: movement;
              animation-duration: 1s;
 
              &:hover {
-                 background-color: #fbfbfb;
+                 background-color:#f37a7a;
                  color: blue;
              }
 
