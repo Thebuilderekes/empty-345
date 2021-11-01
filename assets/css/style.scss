@@ -27,7 +27,9 @@ html {
 a {
     text-decoration: none;
 }
-/*Header section */
+/*======================================================================*/
+/* =====================HEADER SECTION================================*/
+/*======================================================================*/
 header {
   width: 100%;
   height: 100%;
@@ -43,8 +45,8 @@ header {
 
       .logo {
         font-size: 35px;
-        font-weight: bolder;
-     
+        font-weight: lighter;
+        font-family: 'Archivo Black', sans-serif;
         text-decoration: none;
          letter-spacing: 10px;
         color: #000000;
@@ -117,6 +119,8 @@ header {
         opacity: 0;
         -webkit-transform: translateY(80px);
     }
+
+    
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -124,11 +128,11 @@ header {
 }
 
 
-  .hero-text {
+/*======================================================================*/
+/* =====================HERO SECTION================================*/
+/*======================================================================*/
 
-
-   
-      
+  .hero-text {    
         h1{
             color: #232631;
             opacity: 0.7;
@@ -190,7 +194,9 @@ header {
         
  }
     
-
+/*======================================================================*/
+/* =====================ABOUT SECTION================================*/
+/*======================================================================*/
 
   .about-wuka {
       display: flex;
@@ -226,30 +232,41 @@ p {
   }
 
 
-  .music-section {
+/*======================================================================*/
+/* =====================PROJECTS SECTION================================*/
+/*======================================================================*/
+
+
+  .projects-section {
       background-color: #C9DADF;
       width: 100%;
-   
      display: flex;
      flex-direction: column ;
      justify-content: center;
      align-items: center;
+     padding-bottom: 50px;
 
         .header-img{
-            margin: 50px auto;
+            margin: 30px 0 0 0;
             img {
                 border-radius: 50%;
             }
 
+
+         }
+
+              
             .header-img-title {
-                margin-top: 20px;
-                      font-family: 'Archivo Black', sans-serif;
-               font-weight : 700;
+                font-family: 'Archivo Black', sans-serif;
+               font-weight : 900;
                 text-align: center;
+                color: #f35757;
+                margin: 30px 0;
+                padding: 10px;
+                background-color:#232631; 
 
             }
 
-         }
 
 
          .music-link {
@@ -259,11 +276,14 @@ p {
 
              border: 3px solid #f35757;
              border-radius: 5px;
+             box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 24px 0px rgba(0,0,0,0.75);
              width: 70%;
              height: 70px;
              margin: 20px 0;
              animation-name: movement;
-             animation-duration: 15s;
+             animation-duration: 1s;
 
              &:hover {
                  background-color: #fbfbfb;
@@ -287,6 +307,10 @@ p {
   }
 
 
+  /*======================================================================*/
+/* =====================FOOTER SECTION================================*/
+/*======================================================================*/
+
 
   footer {
   width: 100%;
@@ -309,7 +333,7 @@ p {
     p{
         font-size: 40px;
         font-family: 'Archivo Black', sans-serif;
-        color: #c94759;
+        color: #f35757;
        
     }
 
@@ -330,6 +354,10 @@ p {
 
            a {
                text-decoration: underline;
+
+               &:hover {
+                   color: white;
+               }
            }
        }
     }
@@ -342,7 +370,9 @@ p {
       
     }
 
-  /*----------- MEDIA QUERIES-----*/
+/*======================================================================*/
+/* =====================MEDIA QUERIES================================*/
+/*======================================================================*/
 
 
 
@@ -361,6 +391,8 @@ p {
     a {
         text-decoration: none;
     }
+
+    
     /*Header section */
     header {
       width: 100%;
@@ -419,7 +451,7 @@ p {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 10px 50px;
+                             padding: 10px 70px;
                              font-size: 14px;
                            
                    }
@@ -441,7 +473,6 @@ p {
         }
         }
         
-    
     }
       
     }
@@ -460,18 +491,15 @@ p {
     
       .hero-text {
     
-    
-       
-          
-            h1{
+          h1{
                 color: #232631;
                 opacity: 0.7;
                 font-family: 'Roboto', sans-serif;
                 font-size: 150px;
                 font-weight: bold;
                 position: absolute;
-                top: 40%;
-                left: 25%;
+                top: 75%;
+                left: 24%;
                 text-align: center;
                 z-index: 1;
                 animation-name: movement;
@@ -496,9 +524,8 @@ p {
                                }
     
                
-          
                               }
-          }
+                 }
                 .btn {
                    margin: 0 20px;
                    padding: 20px;
@@ -513,17 +540,13 @@ p {
                     transition: all 500ms ease;
                    }
                    
-    
                    .social {
                        display: block ;
                    }
-                
-    
                }
             
      }
         
-    
     
       .about-wuka {
           display: flex;
@@ -532,7 +555,6 @@ p {
     
           
         h2 {
-      
             font-size: 60px;
             color: rgb(254, 254, 255);
             font-weight: 700;
@@ -559,7 +581,7 @@ p {
       }
     
     
-      .music-section {
+      .projects-section {
           background-color: #C9DADF;
           width: 100%;
        
@@ -590,57 +612,49 @@ p {
      
       }
     
-    
-      
-      
  
       footer {
         width: 100%;
           background: #232631;
       
-          .container {
-            max-width: 100%;
-            display: flex;
-            justify-content: space-between;
-     
-      
-      
-      
-         .follow {
-      
+                .container {
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
             
-          p{
-              font-size: 30px;
-              text-align: center;
-              font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
-             
-          }
-      
-          ul {
-           
-        
-              li{
-                  display: inline;
-                  padding: 0 10px;
-              }
-          }
-      
-      
-          .attribution {
-              margin: 70px;
-             .attribute {
-                 font-size: 16px;
-      
-                 a {
-                     text-decoration: underline;
-                 }
-             }
-          }
-      
-      
-         }
-          }
+                .follow {
+            
+                    
+                            p{
+                                font-size: 30px;
+                                text-align: center;
+                                font-family: 'Archivo Black', sans-serif;
+                                color: #f35757;
+                                
+                            }
+                        
+                            ul {
+                            
+                            
+                                li{
+                                    display: inline;
+                                    padding: 0 10px;
+                                }
+                            }
+                        
+                        
+                            .attribution {
+                                margin: 70px;
+                                .attribute {
+                                    font-size: 16px;
+                        
+                                    a {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                    }
+                }
       
       
               }
@@ -865,7 +879,7 @@ p {
     }
     
     
-      .music-section {
+      .projects-section {
           background-color: #C9DADF;
           width: 100%;
        
@@ -946,7 +960,7 @@ p {
               font-size: 32px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       
@@ -1038,13 +1052,15 @@ p {
     
     
                .nav-item {
-                   
+             
                    .nav-link {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 10px 10px;
+                             padding: 10px 50px;
                              font-size: 14px;
+                    
+                     
                            
                    }
                }      
@@ -1194,7 +1210,7 @@ p {
       }
 
 
-      .music-section {
+      .projects-section {
         background-color: #C9DADF;
         width: 100%;
      
@@ -1259,7 +1275,7 @@ p {
               font-size: 32px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       
@@ -1358,7 +1374,7 @@ p {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 10px 10px;
+                             padding: 10px 30px;
                              font-size: 14px;
                            
                    }
@@ -1509,7 +1525,7 @@ p {
       }
 
 
-      .music-section {
+      .projects-section {
         background-color: #C9DADF;
         width: 100%;
      
@@ -1574,7 +1590,7 @@ p {
               font-size: 32px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       
@@ -1825,7 +1841,7 @@ p {
       }
 
 
-      .music-section {
+      .projects-section {
         background-color: #C9DADF;
         width: 100%;
      
@@ -1889,7 +1905,7 @@ p {
               font-size: 32px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       
@@ -2140,7 +2156,7 @@ p {
         
       }
 
-      .music-section {
+      .projects-section {
         background-color: #C9DADF;
         width: 100%;
      
@@ -2161,7 +2177,6 @@ p {
               display: flex;
               justify-content: center;
               align-items: center;
- 
               border: 3px solid #f35757;
               border-radius: 5px;
               width: 80%;
@@ -2175,8 +2190,9 @@ p {
               a {
                   text-decoration: none;
                   color: black;
-                  font-size: 16px;
+                  font-size: 14px;
                   font-weight: 700;
+                  text-align: center;
                   
               }
           }
@@ -2205,7 +2221,7 @@ p {
               font-size: 32px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       
@@ -2455,7 +2471,7 @@ p {
     }
         
       }
-      .music-section {
+      .projects-section {
         background-color: #C9DADF;
         width: 100%;
      
@@ -2476,7 +2492,6 @@ p {
               display: flex;
               justify-content: center;
               align-items: center;
- 
               border: 3px solid #f35757;
               border-radius: 5px;
               width: 80%;
@@ -2492,6 +2507,7 @@ p {
                   color: black;
                   font-size: 14px;
                   font-weight: 700;
+                  text-align: center;
                   
               }
           }
@@ -2520,7 +2536,7 @@ p {
               font-size: 28px;
               text-align: center;
               font-family: 'Archivo Black', sans-serif;
-              color: #c94759;
+              color: #f35757;
              
           }
       

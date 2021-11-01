@@ -23,7 +23,9 @@ a {
   text-decoration: none;
 }
 
-/*Header section */
+/*======================================================================*/
+/* =====================HEADER SECTION================================*/
+/*======================================================================*/
 header {
   width: 100%;
   height: 100%;
@@ -44,7 +46,8 @@ header .wuka-logo {
 
 header .wuka-logo .logo {
   font-size: 35px;
-  font-weight: bolder;
+  font-weight: lighter;
+  font-family: 'Archivo Black', sans-serif;
   text-decoration: none;
   letter-spacing: 10px;
   color: #000000;
@@ -114,6 +117,9 @@ header .main-header .bg-img .overlay img {
   }
 }
 
+/*======================================================================*/
+/* =====================HERO SECTION================================*/
+/*======================================================================*/
 .hero-text h1 {
   color: #232631;
   opacity: 0.7;
@@ -175,6 +181,9 @@ header .main-header .bg-img .overlay img {
   display: block;
 }
 
+/*======================================================================*/
+/* =====================ABOUT SECTION================================*/
+/*======================================================================*/
 .about-wuka {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +219,10 @@ header .main-header .bg-img .overlay img {
   background: #D9CFB9;
 }
 
-.music-section {
+/*======================================================================*/
+/* =====================PROJECTS SECTION================================*/
+/*======================================================================*/
+.projects-section {
   background-color: #C9DADF;
   width: 100%;
   display: -webkit-box;
@@ -226,24 +238,28 @@ header .main-header .bg-img .overlay img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 50px;
 }
 
-.music-section .header-img {
-  margin: 50px auto;
+.projects-section .header-img {
+  margin: 30px 0 0 0;
 }
 
-.music-section .header-img img {
+.projects-section .header-img img {
   border-radius: 50%;
 }
 
-.music-section .header-img .header-img-title {
-  margin-top: 20px;
+.projects-section .header-img-title {
   font-family: 'Archivo Black', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
+  color: #f35757;
+  margin: 30px 0;
+  padding: 10px;
+  background-color: #232631;
 }
 
-.music-section .music-link {
+.projects-section .music-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,21 +271,24 @@ header .main-header .bg-img .overlay img {
           align-items: center;
   border: 3px solid #f35757;
   border-radius: 5px;
+  box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 24px 0px rgba(0, 0, 0, 0.75);
   width: 70%;
   height: 70px;
   margin: 20px 0;
   -webkit-animation-name: movement;
           animation-name: movement;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
-.music-section .music-link:hover {
+.projects-section .music-link:hover {
   background-color: #fbfbfb;
   color: blue;
 }
 
-.music-section .music-link a {
+.projects-section .music-link a {
   text-decoration: none;
   color: black;
   font-family: 'Archivo Black', sans-serif;
@@ -277,10 +296,13 @@ header .main-header .bg-img .overlay img {
   font-weight: 700;
 }
 
-.music-section .music-link a:hover {
+.projects-section .music-link a:hover {
   color: blue;
 }
 
+/*======================================================================*/
+/* =====================FOOTER SECTION================================*/
+/*======================================================================*/
 footer {
   width: 100%;
   background: #232631;
@@ -303,7 +325,7 @@ footer .container {
 footer .container .follow p {
   font-size: 40px;
   font-family: 'Archivo Black', sans-serif;
-  color: #c94759;
+  color: #f35757;
 }
 
 footer .container .follow ul li {
@@ -323,7 +345,13 @@ footer .container .follow .attribution .attribute a {
   text-decoration: underline;
 }
 
-/*----------- MEDIA QUERIES-----*/
+footer .container .follow .attribution .attribute a:hover {
+  color: white;
+}
+
+/*======================================================================*/
+/* =====================MEDIA QUERIES================================*/
+/*======================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   body {
     width: 100%;
@@ -385,7 +413,7 @@ footer .container .follow .attribution .attribute a {
     color: #000000;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 10px 50px;
+    padding: 10px 70px;
     font-size: 14px;
   }
   header .main-header .bg-img .overlay {
@@ -425,8 +453,8 @@ footer .container .follow .attribution .attribute a {
     font-size: 150px;
     font-weight: bold;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 75%;
+    left: 24%;
     text-align: center;
     z-index: 1;
     -webkit-animation-name: movement;
@@ -502,7 +530,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 18px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -519,20 +547,20 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     border: 1px solid #f35757;
     border-radius: 5px;
     width: 70%;
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
   footer {
@@ -552,7 +580,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 30px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -747,7 +775,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 18px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -764,13 +792,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -786,10 +814,10 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -827,7 +855,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 32px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -894,7 +922,7 @@ footer .container .follow .attribution .attribute a {
     color: #000000;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 10px 10px;
+    padding: 10px 50px;
     font-size: 14px;
   }
   header .main-header .bg-img .overlay {
@@ -1011,7 +1039,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 14px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -1028,13 +1056,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1050,10 +1078,10 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -1081,7 +1109,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 32px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -1148,7 +1176,7 @@ footer .container .follow .attribution .attribute a {
     color: #000000;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 10px 10px;
+    padding: 10px 30px;
     font-size: 14px;
   }
   header .main-header .bg-img .overlay {
@@ -1266,7 +1294,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 14px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -1283,13 +1311,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1305,10 +1333,10 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -1336,7 +1364,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 32px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -1529,7 +1557,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 14px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -1546,13 +1574,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1568,10 +1596,10 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -1599,7 +1627,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 32px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -1792,7 +1820,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 14px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -1809,13 +1837,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1831,14 +1859,15 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
+    text-align: center;
   }
   footer {
     width: 100%;
@@ -1862,7 +1891,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 32px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul li {
     display: inline;
@@ -2056,7 +2085,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 14px;
     background: #D9CFB9;
   }
-  .music-section {
+  .projects-section {
     background-color: #C9DADF;
     width: 100%;
     display: -webkit-box;
@@ -2073,13 +2102,13 @@ footer .container .follow .attribution .attribute a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .music-section .header-img {
+  .projects-section .header-img {
     margin: 50px 0;
   }
-  .music-section .header-img img {
+  .projects-section .header-img img {
     border-radius: 50%;
   }
-  .music-section .music-link {
+  .projects-section .music-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2095,14 +2124,15 @@ footer .container .follow .attribution .attribute a {
     height: 70px;
     margin: 20px 0;
   }
-  .music-section .music-link:hover {
+  .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
-  .music-section .music-link a {
+  .projects-section .music-link a {
     text-decoration: none;
     color: black;
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
   }
   footer {
     width: 100%;
@@ -2126,7 +2156,7 @@ footer .container .follow .attribution .attribute a {
     font-size: 28px;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    color: #c94759;
+    color: #f35757;
   }
   footer .container .follow ul {
     margin-left: -10px;
