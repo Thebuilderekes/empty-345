@@ -114,18 +114,6 @@ header {
   
 }
 
-@keyframes movement {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(80px);
-    }
-
-    
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
 
 
 /*======================================================================*/
@@ -145,8 +133,7 @@ header {
             text-align: center;
             font-size: 400px;   
             z-index: 1;
-            animation-name: movement;
-            animation-duration: 7s;
+
           
    }
            
@@ -282,8 +269,7 @@ p {
              width: 50%;
              height: 70px;
              margin: 20px 0;
-             animation-name: movement;
-             animation-duration: 1s;
+    
 
              &:hover {
                  background-color:#f37a7a;
@@ -476,17 +462,7 @@ p {
     }
       
     }
-    
-    @keyframes movement {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateY(40px);
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-        }
-    }
+
     
     
       .hero-text {
@@ -502,8 +478,7 @@ p {
                 left: 24%;
                 text-align: center;
                 z-index: 1;
-                animation-name: movement;
-                animation-duration: 15s;
+
               
        }
                
@@ -765,16 +740,7 @@ p {
       
     }
     
-    @keyframes movement {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateY(40px);
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-        }
-    }
+ 
     
     
       .hero-text {
@@ -794,8 +760,7 @@ p {
                 text-align: center;
              
                 z-index: 1;
-                animation-name: movement;
-                animation-duration: 15s;
+           
               
        }
                
@@ -1099,8 +1064,7 @@ p {
             font-weight: bolder;
             top: 38%;
             left: 10%;
-            animation-name: movement;
-            animation-duration: 7s;
+      
     
             &:hover {
                 color: #f35757;
@@ -1414,8 +1378,7 @@ p {
             font-weight: bolder;
             top: 38%;
             left: 10%;
-            animation-name: movement;
-            animation-duration: 7s;
+    
     
             &:hover {
                 color: #f35757;
@@ -1430,7 +1393,7 @@ p {
                 font-size: 80px;
                 font-weight: bold;
                 position: absolute;
-                top: 60%;
+                top: 30%;
                 left: 28%;
                 text-align: center;
                 z-index: 1;
@@ -1578,7 +1541,12 @@ p {
          margin: 0;
          padding: 10px 0 0 0;
     
-      
+        .footer-img {
+                  width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
       
       
       
@@ -1732,8 +1700,7 @@ p {
             font-weight: bolder;
             top: 38%;
             left: 10%;
-            animation-name: movement;
-            animation-duration: 7s;
+   
     
             &:hover {
                 color: #f35757;
@@ -1875,6 +1842,7 @@ p {
  
               a {
                   text-decoration: none;
+                  text-align: center;
                   color: black;
                   font-size: 16px;
                   font-weight: 700;
@@ -2048,8 +2016,7 @@ p {
             font-weight: bolder;
             top: 38%;
             left: 10%;
-            animation-name: movement;
-            animation-duration: 7s;
+      
     
             &:hover {
                 color: #f35757;
@@ -2182,6 +2149,7 @@ p {
               width: 80%;
               height: 70px;
               margin: 20px 0;
+              padding: 0 5px;
  
               &:hover {
                   background-color: #fbfbfb;
@@ -2364,9 +2332,8 @@ p {
             font-weight: bolder;
             top: 38%;
             left: 10%;
-            animation-name: movement;
-            animation-duration: 7s;
-    
+
+
             &:hover {
                 color: #f35757;
             }

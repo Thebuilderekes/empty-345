@@ -95,28 +95,6 @@ header .main-header .bg-img .overlay img {
   mix-blend-mode: darken;
 }
 
-@-webkit-keyframes movement {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(80px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
-@keyframes movement {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(80px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-
 /*======================================================================*/
 /* =====================HERO SECTION================================*/
 /*======================================================================*/
@@ -132,10 +110,6 @@ header .main-header .bg-img .overlay img {
   text-align: center;
   font-size: 400px;
   z-index: 1;
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
 }
 
 .hero-text .btn-group {
@@ -277,10 +251,6 @@ header .main-header .bg-img .overlay img {
   width: 50%;
   height: 70px;
   margin: 20px 0;
-  -webkit-animation-name: movement;
-          animation-name: movement;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 .projects-section .music-link:hover {
@@ -426,26 +396,6 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  @-webkit-keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
-  @keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
   .hero-text h1 {
     color: #232631;
     opacity: 0.7;
@@ -457,10 +407,6 @@ footer .container .follow .attribution .attribute a:hover {
     left: 24%;
     text-align: center;
     z-index: 1;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
   }
   .hero-text .btn-group {
     position: absolute;
@@ -671,26 +617,6 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  @-webkit-keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
-  @keyframes movement {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-    }
-  }
   .hero-text h1 {
     color: #232631;
     opacity: 0.7;
@@ -702,10 +628,6 @@ footer .container .follow .attribution .attribute a:hover {
     left: 20%;
     text-align: center;
     z-index: 1;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
   }
   .hero-text .btn-group {
     position: absolute;
@@ -943,10 +865,6 @@ footer .container .follow .attribution .attribute a:hover {
     font-weight: bolder;
     top: 38%;
     left: 10%;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
   }
   .hero-text a:hover {
     color: #f35757;
@@ -1197,10 +1115,6 @@ footer .container .follow .attribution .attribute a:hover {
     font-weight: bolder;
     top: 38%;
     left: 10%;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
   }
   .hero-text a:hover {
     color: #f35757;
@@ -1212,7 +1126,7 @@ footer .container .follow .attribution .attribute a:hover {
     font-size: 80px;
     font-weight: bold;
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 28%;
     text-align: center;
     z-index: 1;
@@ -1357,6 +1271,12 @@ footer .container .follow .attribution .attribute a:hover {
     margin: 0;
     padding: 10px 0 0 0;
   }
+  footer .container .footer-img {
+    width: 100%;
+  }
+  footer .container .footer-img img {
+    max-width: 100%;
+  }
   footer .container .follow {
     margin-top: 30px;
   }
@@ -1459,10 +1379,6 @@ footer .container .follow .attribution .attribute a:hover {
     font-weight: bolder;
     top: 38%;
     left: 10%;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
   }
   .hero-text a:hover {
     color: #f35757;
@@ -1601,6 +1517,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   .projects-section .music-link a {
     text-decoration: none;
+    text-align: center;
     color: black;
     font-size: 16px;
     font-weight: 700;
@@ -1722,10 +1639,6 @@ footer .container .follow .attribution .attribute a:hover {
     font-weight: bolder;
     top: 38%;
     left: 10%;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
   }
   .hero-text a:hover {
     color: #f35757;
@@ -1858,6 +1771,7 @@ footer .container .follow .attribution .attribute a:hover {
     width: 80%;
     height: 70px;
     margin: 20px 0;
+    padding: 0 5px;
   }
   .projects-section .music-link:hover {
     background-color: #fbfbfb;
@@ -1987,10 +1901,6 @@ footer .container .follow .attribution .attribute a:hover {
     font-weight: bolder;
     top: 38%;
     left: 10%;
-    -webkit-animation-name: movement;
-            animation-name: movement;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
   }
   .hero-text a:hover {
     color: #f35757;
