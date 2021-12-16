@@ -27,6 +27,8 @@ html {
 a {
     text-decoration: none;
 }
+
+  
 /*======================================================================*/
 /* =====================HEADER SECTION================================*/
 /*======================================================================*/
@@ -116,70 +118,6 @@ header {
 
 
 
-/*======================================================================*/
-/* =====================HERO SECTION================================*/
-/*======================================================================*/
-
-  .hero-text {    
-        h1{
-            color: #232631;
-            opacity: 0.7;
-            font-family: 'Roboto', sans-serif;
-            font-size: 150px;
-            font-weight: bold;
-            position: absolute;
-            top: 110%;
-            left: 7%;
-            text-align: center;
-            font-size: 400px;   
-            z-index: 1;
-
-          
-   }
-           
-    
-        .btn-group{
-         position: absolute;
-           top: 60%;
-           left: 3%;
-           display: flex;
-           flex-direction: column;
-
-                            ul {
-                                margin-top: 50px;
-                                margin-left: 90px;
-                            
-                                li {
-                                list-style: none;       
-                           }
-
-           
-      
-                          }
-      }
-            .btn {
-               margin: 0 20px;
-               padding: 20px;
-               border: 2px solid white;
-               background: transparent;
-               color: #ffffff;
-               font-size: 20px;
-               font-weight: bold;
-
-               &:hover{
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-               
-
-               .social {
-                   display: block ;
-               }
-            
-
-           }
-        
- }
     
 /*======================================================================*/
 /* =====================ABOUT SECTION================================*/
@@ -193,8 +131,7 @@ header {
 
       
     h2 {
-  
-        font-size: 60px;
+        font-size: 45px;
         color: rgb(254, 254, 255);
         font-weight: 700;
          background: #232631;
@@ -209,7 +146,7 @@ header {
 
     }
 p {
-    max-width: 70%;
+    max-width: 75%;
     margin:  6rem auto;
     padding: 80px;
     font-weight: bold;
@@ -225,7 +162,6 @@ p {
 /* =====================PROJECTS SECTION================================*/
 /*======================================================================*/
 
-
   .projects-section {
       background-color: #C9DADF;
       width: 100%;
@@ -240,11 +176,8 @@ p {
             img {
                 border-radius: 50%;
             }
-
-
          }
-
-              
+  
             .header-img-title {
                 font-family: 'Archivo Black', sans-serif;
                font-weight : 900;
@@ -285,8 +218,11 @@ p {
                  font-size: 20px;
                  font-weight: 700;
 
-               
-                 
+                   &:hover {
+
+                    color:#ffffff;
+                       
+                   }
              }
          }
  
@@ -308,10 +244,6 @@ p {
    padding: 0;
   justify-content: space-between;
   align-items: center;
-
-
-
-
 
    .follow {
 
@@ -362,7 +294,235 @@ p {
 
 
 
-  @media screen  and (min-width:768px) and (max-width:1000px) {
+@media screen  and (min-width:769px) and (max-width:1000px) {
+            
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+    html {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    
+    /*Header section */
+    header {
+      width: 100%;
+      height: 100%;
+    
+     .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+          padding: 10px 30px;
+         display: flex;
+      justify-content: space-between;
+       
+    
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+         
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+    
+    
+          .social-links {
+              a {
+                  padding: 0 20px;
+              }
+          }
+      }
+    
+      
+     
+      .main-header {
+         width: 100%;
+          background-image: url(/assets/img/back-img.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+    
+    
+         nav {
+              background-color: white ;
+              width: 100%;
+              height: 80px;
+    
+              .navbar-nav {
+                
+               position: absolute;
+               z-index: 10;
+    
+    
+               .nav-item {
+                   background-color: #ffffff;
+                   .nav-link {
+                       color: #000000;
+                       text-transform: uppercase;
+                             font-weight: 900;
+                             padding: 10px 70px;
+                             font-size: 14px;
+                           
+                   }
+               }
+              }
+          }
+        
+          .bg-img {
+           .overlay{
+            width: 100%;
+            background: #0000001c;
+            z-index: 10;
+            img{
+                width: 100%;
+                z-index: -10;
+                mix-blend-mode:darken;
+            }
+    
+        }
+        }
+        
+    }
+      
+    }
+
+    
+
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #B85863;
+    
+          
+        h2 {
+            font-size: 30px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            top: 40%;
+         left: 5%;
+             background: #232631;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+        p {
+            max-width: 70%;
+            margin:  6rem auto;
+            padding: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            background: #D9CFB9;
+        
+        }
+        
+      }
+    
+    
+      .projects-section {
+          background-color: #C9DADF;
+          width: 100%;
+       
+         display: flex;
+         flex-direction: column ;
+         justify-content: center;
+         align-items: center;
+    
+            .header-img{
+                margin: 50px 0;
+                img {
+                    border-radius: 50%;
+                }
+             }
+    
+    
+             .music-link {
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
+
+
+                 a {
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                 }
+             }
+     
+      }
+    
+ 
+      footer {
+        width: 100%;
+          background: #232631;
+      
+                .container {
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+            
+                .follow {
+            
+                    
+                            p{
+                                font-size: 30px;
+                                text-align: center;
+                                font-family: 'Archivo Black', sans-serif;
+                                color: #f35757;
+                                
+                            }
+                        
+                            ul {
+                            
+                            
+                                li{
+                                    display: inline;
+                                    padding: 0 10px;
+                                }
+                            }
+                        
+                        
+                            .attribution {
+                                margin: 70px;
+                                .attribute {
+                                    font-size: 16px;
+                        
+                                    a {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                    }
+                }
+      
+      
+              }
+            
+            
+
+    
+}
+
+  @media screen  and (max-width:768px)  {
 
     body{
         width: 100%;
@@ -465,62 +625,6 @@ p {
 
     
     
-      .hero-text {
-    
-          h1{
-                color: #232631;
-                opacity: 0.7;
-                font-family: 'Roboto', sans-serif;
-                font-size: 150px;
-                font-weight: bold;
-                position: absolute;
-                top: 50%;
-                left: 24%;
-                text-align: center;
-                z-index: 1;
-
-              
-       }
-               
-        
-            .btn-group{
-             position: absolute;
-               top: 60%;
-               left: 3%;
-               display: flex;
-               flex-direction: column;
-    
-                                ul {
-                                    margin-top: 50px;
-                                    margin-left: 90px;
-                                
-                                    li {
-                                    list-style: none;       
-                               }
-    
-               
-                              }
-                 }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-                   .social {
-                       display: block ;
-                   }
-               }
-            
-     }
         
     
       .about-wuka {
@@ -530,7 +634,7 @@ p {
     
           
         h2 {
-            font-size: 40px;
+            font-size: 30px;
             color: rgb(254, 254, 255);
             font-weight: 700;
             padding: 10px;
@@ -574,6 +678,8 @@ p {
     
     
              .music-link {
+
+
                  border-radius: 5px;
                  width: 70%;
                  height: 70px;
@@ -581,6 +687,13 @@ p {
     
                  &:hover {
                      background-color: #fbfbfb;
+                 }
+
+                 a {
+                    &:hover {
+                       color: #f35757;
+                    }
+
                  }
              }
      
@@ -654,6 +767,8 @@ p {
     a {
         text-decoration: none;
     }
+
+    
     /*Header section */
     header {
       width: 100%;
@@ -707,12 +822,12 @@ p {
     
     
                .nav-item {
-                    background-color: #ffffff;
+                   background-color: #ffffff;
                    .nav-link {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 10px 40px;
+                             padding: 10px 70px;
                              font-size: 14px;
                            
                    }
@@ -734,113 +849,45 @@ p {
         }
         }
         
-    
     }
       
     }
-    
- 
-    
-    
-      .hero-text {
+
     
     
-       
+        
+    
+      .about-wuka {
+          display: flex;
+          flex-direction: row;
+          background: #B85863;
+    
           
-            h1{
-                color: #232631;
-                opacity: 0.7;
-                font-family: 'Roboto', sans-serif;
-                font-size: 150px;
-                font-weight: bold;
-                position: absolute;
-                top: 70%;
-                left: 20%;
-                text-align: center;
-             
-                z-index: 1;
-           
-              
-       }
-               
+        h2 {
+            font-size: 30px;
+            color: rgb(254, 254, 255);
+            font-weight: 700;
+            padding: 10px;
+            top: 40%;
+             background: #232631;
+            transform: rotate(-90deg);
+    
+            span {
+                color: #fa9b9b;
+            }
+    
+        }
+        p {
+            max-width: 60%;
+            margin:  6rem auto;
+            padding: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            background: #D9CFB9;
         
-            .btn-group{
-             position: absolute;
-               top: 60%;
-               left: 3%;
-               display: flex;
-               flex-direction: column;
-    
-                                ul {
-                                    margin-top: 50px;
-                                    margin-left: 90px;
-                                
-                                    li {
-                                    list-style: none;       
-                               }
-    
-               
-          
-                              }
-          }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-            
-     }
+        }
         
-    
-    
-     .about-wuka {
-        display: flex;
-        flex-direction: row;
-        background: #B85863;
-  
-        
-      h2 {
-    
-          font-size: 60px;
-          color: rgb(254, 254, 255);
-          font-weight: 700;
-          padding: 10px;
-          position: absolute;
-           margin-top: 190px;
-           background: #232631;
-          transform: rotate(-90deg);
-  
-          span {
-              color: #fa9b9b;
-          }
-  
       }
-      p {
-        max-width: 60%;
-        margin:  6rem auto;
-        font-weight: bold;
-        font-size: 18px;
-        background: #D9CFB9;
-    
-    }
-      
-    }
     
     
       .projects-section {
@@ -861,173 +908,154 @@ p {
     
     
              .music-link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5px;
-                width: 70%;
-                height: 70px;
-                margin: 20px 0;
-   
-                &:hover {
-                    background-color: #fbfbfb;
-                   
-                   
-                   
-                 
-                }
-   
-                a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 20px;
-                    font-weight: 700;
-                    
-                    
-                }
-            }
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
+
+                 a {
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                 }
+             }
      
       }
     
-    
-    
+ 
       footer {
         width: 100%;
           background: #232631;
       
-          .container {
-         display: flex;
-         flex-direction: column-reverse;
-            justify-content: space-between;
-         padding: 20px 0 0 0;
-         margin: 0;
-         max-width: 100%;
-      
-        .footer-img{
-
-            width: 100%;
-
-            img {
-         width: 100%;
-               
-            }
-        }
-      
-      
-      
-         .follow {
-        margin-top: 30px;
+                .container {
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
             
-          p{
-              font-size: 32px;
-              text-align: center;
-              font-family: 'Archivo Black', sans-serif;
-              color: #f35757;
-             
-          }
+                .follow {
+            
+                    
+                            p{
+                                font-size: 30px;
+                                text-align: center;
+                                font-family: 'Archivo Black', sans-serif;
+                                color: #f35757;
+                                
+                            }
+                        
+                            ul {
+                            
+                            
+                                li{
+                                    display: inline;
+                                    padding: 0 10px;
+                                }
+                            }
+                        
+                        
+                            .attribution {
+                                margin: 70px;
+                                .attribute {
+                                    font-size: 16px;
+                        
+                                    a {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                    }
+                }
       
-          ul {
       
-        
-              li{
-                  display: inline;
-               
               }
-          }
-      
-      
-          .attribution {
-              margin: 70px;
-             .attribute {
-                 font-size: 16px;
-      
-                 a {
-                     text-decoration: underline;
-                 }
-             }
-          }
-      
-      
-         }
-          }
-      
-    
-      }
-    
-
   }
 
 
   @media screen  and (min-width:501px) and (max-width:600px) {
 
-
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        
+    }
+    html {
+        width: 100%;
+    }
+    
     a {
         text-decoration: none;
     }
+
+    
     /*Header section */
     header {
       width: 100%;
       height: 100%;
     
-    
-      .wuka-logo {
-        background: rgb(216, 214, 214);
-        width: 100%;
-        height: 80px;
-        padding: 10px 30px;
-       display: flex;
-    justify-content: space-between;
-     
-
-    .social-links {
-        display: none;
-    }
-  
-        .logo {
-          font-size: 35px;
-          font-weight: bolder;
+     .wuka-logo {
+          background: rgb(216, 214, 214);
+          width: 100%;
+          height: 80px;
+          padding: 10px 30px;
+         display: flex;
+      justify-content: space-between;
        
-          text-decoration: none;
-           letter-spacing: 10px;
-          color: #000000;
+    
+          .logo {
+            font-size: 35px;
+            font-weight: bolder;
+         
+            text-decoration: none;
+             letter-spacing: 10px;
+            color: #000000;
+            
+          }
+    
+    
+          .social-links {
+              a {
+                  padding: 0 20px;
+              }
           }
       }
+    
+      
      
       .main-header {
-    
-          width: 100%;
+         width: 100%;
           background-image: url(/assets/img/back-img.jpg);
           background-repeat: no-repeat;
           background-size: cover;
     
     
-          nav {
+         nav {
               background-color: white ;
               width: 100%;
               height: 80px;
     
-              .navbar-nav{
+              .navbar-nav {
                 
                position: absolute;
                z-index: 10;
-               background-color: #ffffff;
     
     
                .nav-item {
-             
+                   background-color: #ffffff;
                    .nav-link {
                        color: #000000;
                        text-transform: uppercase;
                              font-weight: 900;
-                             padding: 10px 50px;
+                             padding: 10px 70px;
                              font-size: 14px;
-                    
-                     
                            
                    }
-               }      
-                       
-                
+               }
               }
           }
         
@@ -1045,113 +1073,29 @@ p {
         }
         }
         
-    
     }
       
     }
-    
-    
-      .hero-text {
 
-        a {
-            text-decoration: underline;
-            color: #000000;
-            position: absolute;
-            font-size: 16px;
-            font-weight: bolder;
-            top: 38%;
-            left: 10%;
-      
     
-            &:hover {
-                color: #f35757;
-            }
-        }
-          
-          
-            h1{
-                color: #232631;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 3px;
-                font-size:  80px;
-                font-weight: bold;
-                position: absolute;
-                top: 60%;
-                left: 30%;
-                // text-align: center;
-                z-index: 1;
-       }
-               
+    
         
-            .btn-group{
-             position: absolute;
-               top: 32%;
-               left: 5%;
-               display: flex;
-               flex-direction: column;
-    
-               ul {
-               margin-top: -40px;
-                margin-left: 20px;
-                li {
-                    margin-right: 40px;
-                   display: inline;
-                   list-style: none;
-    
-    
-               }
-    
-               
-               li a img:hover {
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-            }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                //    border-radius: 10px;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-                 
-              
-    
-        }
-        }
-    
     
       .about-wuka {
           display: flex;
           flex-direction: row;
           background: #B85863;
+      position: relative;
           
         h2 {
-            // border-radius: 20px;
-            font-size: 32px;
+            font-size: 20px;
             color: rgb(254, 254, 255);
             font-weight: 700;
-            padding: 10px;
             position: absolute;
-             margin-top: 97px;
-            
+            padding: 10px;
+            top: 27%;
+         left: 7%;
              background: #232631;
-             margin-left: -50px;
             transform: rotate(-90deg);
     
             span {
@@ -1162,109 +1106,99 @@ p {
         p {
             max-width: 60%;
             margin:  6rem auto;
+            padding: 50px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 14px;
             background: #D9CFB9;
         
         }
         
       }
-
-
+    
+    
       .projects-section {
-        background-color: #C9DADF;
-        width: 100%;
-     
-       display: flex;
-       flex-direction: column ;
-       justify-content: center;
-       align-items: center;
-  
-          .header-img{
-              margin: 50px 0;
-              img {
-                  border-radius: 50%;
-              }
-           }
-  
-  
-           .music-link {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 5px;
-              width: 80%;
-              height: 70px;
-              margin: 20px 0;
- 
-              &:hover {
-                  background-color: #fbfbfb;
-              }
- 
-              a {
-                  text-decoration: none;
-                  color: black;
-                  font-size: 16px;
-                  font-weight: 700;
-                  
-              }
-          }
-   
-    }
+          background-color: #C9DADF;
+          width: 100%;
+       
+         display: flex;
+         flex-direction: column ;
+         justify-content: center;
+         align-items: center;
+    
+            .header-img{
+                margin: 50px 0;
+                img {
+                    border-radius: 50%;
+                }
+             }
+    
+    
+             .music-link {
+                 border-radius: 5px;
+                 width: 70%;
+                 height: 70px;
+                 margin: 20px 0;
+    
+                 &:hover {
+                     background-color: #fbfbfb;
+                 }
 
-    footer {
+                 a {
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                 }
+             }
+     
+      }
+    
+ 
+      footer {
         width: 100%;
           background: #232631;
       
-          .container {
-         display: flex;
-         flex-direction: column-reverse;
-         margin: 0;
-         padding: 0;
-    
-      
-      
-      
-      
-      
-         .follow {
-        margin-top: 30px;
+                .container {
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
             
-          p{
-              font-size: 32px;
-              text-align: center;
-              font-family: 'Archivo Black', sans-serif;
-              color: #f35757;
-             
-          }
+                .follow {
+            
+                    
+                            p{
+                                font-size: 30px;
+                                text-align: center;
+                                font-family: 'Archivo Black', sans-serif;
+                                color: #f35757;
+                                
+                            }
+                        
+                            ul {
+                            
+                            
+                                li{
+                                    display: inline;
+                                    padding: 0 10px;
+                                }
+                            }
+                        
+                        
+                            .attribution {
+                                margin: 70px;
+                                .attribute {
+                                    font-size: 16px;
+                        
+                                    a {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                    }
+                }
       
-          ul {
       
-        
-              li{
-                  display: inline;
-               
               }
-          }
-      
-      
-          .attribution {
-              margin: 70px;
-             .attribute {
-                 font-size: 16px;
-      
-                 a {
-                     text-decoration: underline;
-                 }
-             }
-          }
-      
-      
-         }
-          }
-      
-    
-      }
     
 
   }
@@ -1363,90 +1297,7 @@ p {
     }
     
     
-      .hero-text {
-
-        a {
-            text-decoration: underline;
-            color: #000000;
-            position: absolute;
-            font-size: 16px;
-            font-weight: bolder;
-            top: 38%;
-            left: 10%;
-    
-    
-            &:hover {
-                color: #f35757;
-            }
-        }
-          
-          
-            h1{
-                color: #232631;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 2px;
-                font-size: 80px;
-                font-weight: bold;
-                position: absolute;
-                top: 45%;
-                left: 22%;
-                text-align: center;
-                z-index: 1;
-       }
-               
-        
-            .btn-group{
-             position: absolute;
-               top: 32%;
-               left: 5%;
-               display: flex;
-               flex-direction: column;
-    
-               ul {
-               margin-top: -40px;
-                margin-left: 20px;
-                li {
-                    margin-right: 40px;
-                   display: inline;
-                   list-style: none;
-    
-    
-               }
-    
-               
-               li a img:hover {
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-            }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                //    border-radius: 10px;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-                 
-              
-    
-        }
-        }
-    
+   
     
       .about-wuka {
           display: flex;
@@ -1517,6 +1368,13 @@ p {
                   font-size: 16px;
                   font-weight: 700;
                   
+
+                  
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                 
               }
           }
    
@@ -1679,89 +1537,7 @@ p {
       
     }
     
-    
-      .hero-text {
 
-
-        a {
-            text-decoration: underline;
-            color: #000000;
-            position: absolute;
-            font-size: 16px;
-            font-weight: bolder;
-            top: 38%;
-            left: 10%;
-   
-    
-            &:hover {
-                color: #f35757;
-            }
-        }
-          
-            h1{
-                color: #232631;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 2px;
-                font-size: 60px;
-                font-weight: bold;
-                position: absolute;
-                top: 45%;
-                left: 27%;
-                text-align: center;
-                z-index: 1;
-                opacity: 0.6;
-       }
-               
-        
-            .btn-group{
-             position: absolute;
-               top: 30%;
-               left: 5%;
-               display: flex;
-               flex-direction: column;
-    
-               ul {
-               margin-top: -40px;
-                margin-left: 20px;
-                li {
-                    margin-right: 40px;
-                   display: inline;
-                   list-style: none;
-    
-    
-               }
-    
-               
-               li a img:hover {
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-            }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-        
-    
-        }
-        }
     
     
       .about-wuka {
@@ -1834,6 +1610,14 @@ p {
                   color: black;
                   font-size: 16px;
                   font-weight: 700;
+
+
+                 
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                
                   
               }
           }
@@ -1993,88 +1777,6 @@ p {
     }
     
     
-      .hero-text {
-
-
-        a {
-            text-decoration: underline;
-            color: #000000;
-            position: absolute;
-            font-size: 16px;
-            font-weight: bolder;
-            top: 38%;
-            left: 10%;
-   
-    
-            &:hover {
-                color: #f35757;
-            }
-        }
-          
-            h1{
-                color: #232631;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 2px;
-                font-size: 60px;
-                font-weight: bold;
-                position: absolute;
-                top: 45%;
-                left: 27%;
-                text-align: center;
-                z-index: 1;
-                opacity: 0.6;
-       }
-               
-        
-            .btn-group{
-             position: absolute;
-               top: 30%;
-               left: 5%;
-               display: flex;
-               flex-direction: column;
-    
-               ul {
-               margin-top: -40px;
-                margin-left: 20px;
-                li {
-                    margin-right: 40px;
-                   display: inline;
-                   list-style: none;
-    
-    
-               }
-    
-               
-               li a img:hover {
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-            }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-        
-    
-        }
-        }
     
     
       .about-wuka {
@@ -2149,6 +1851,12 @@ p {
                   font-size: 16px;
                   font-weight: 700;
                   
+
+                    &:hover {
+                       color: #f35757;
+                    }
+
+                 
               }
           }
    
@@ -2307,89 +2015,6 @@ p {
     }
     
     
-      .hero-text {
-
-
-        a {
-            text-decoration: underline;
-            color: #000000;
-            position: absolute;
-            font-size: 16px;
-            font-weight: bolder;
-            top: 38%;
-            left: 10%;
-   
-    
-            &:hover {
-                color: #f35757;
-            }
-        }
-          
-            h1{
-                color: #232631;
-                font-family: 'Roboto', sans-serif;
-                letter-spacing: 2px;
-                font-size: 60px;
-                font-weight: bold;
-                position: absolute;
-                top: 60%;
-                left: 22%;
-                text-align: center;
-                z-index: 1;
-                opacity: 0.6;
-       }
-               
-        
-            .btn-group{
-             position: absolute;
-               top: 30%;
-               left: 5%;
-               display: flex;
-               flex-direction: column;
-    
-               ul {
-               margin-top: -40px;
-                margin-left: 20px;
-                li {
-                    margin-right: 40px;
-                   display: inline;
-                   list-style: none;
-    
-    
-               }
-    
-               
-               li a img:hover {
-                transform: translateY(-5px);
-                transition: all 500ms ease;
-               }
-            }
-                .btn {
-                   margin: 0 20px;
-                   padding: 20px;
-                   border: 2px solid white;
-                   background: transparent;
-                   color: #ffffff;
-                   font-size: 20px;
-                   font-weight: bold;
-    
-                   &:hover{
-                    transform: translateY(-5px);
-                    transition: all 500ms ease;
-                   }
-                   
-    
-                   .social {
-                       display: block ;
-                   }
-                
-    
-               }
-        
-    
-        }
-        }
-    
     
       .about-wuka {
           display: flex;
@@ -2463,6 +2088,12 @@ p {
                   color: black;
                   font-size: 16px;
                   font-weight: 700;
+
+                 
+                    &:hover {
+                       color: #f35757;
+                    }
+
                   
               }
           }
