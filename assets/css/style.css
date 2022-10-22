@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*General*/
@@ -12,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -30,51 +29,44 @@ header {
   width: 100%;
   height: 100%;
 }
-
 header .wuka-logo {
-  background: #d8d6d6;
+  background: rgb(216, 214, 214);
   width: 100%;
   height: 80px;
   padding: 10px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header .wuka-logo .logo {
   font-size: 35px;
   font-weight: lighter;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   text-decoration: none;
   letter-spacing: 10px;
   color: #000000;
 }
-
 header .wuka-logo .social-links a {
   padding: 0 20px;
 }
-
 header .main-header {
   width: 100%;
   background-image: url(/assets/img/back-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 header .main-header nav {
   background-color: white;
   width: 100%;
   height: 80px;
 }
-
+header .main-header nav .collapse {
+  display: flex;
+  justify-content: center;
+}
 header .main-header nav .navbar-nav {
   position: absolute;
   z-index: 10;
 }
-
 header .main-header nav .navbar-nav .nav-item .nav-link {
   color: #000000;
   text-transform: uppercase;
@@ -82,50 +74,129 @@ header .main-header nav .navbar-nav .nav-item .nav-link {
   padding: 0 10px;
   font-size: 14px;
 }
-
+header .main-header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #f35757;
+}
 header .main-header .bg-img .overlay {
   width: 100%;
-  background: #0000001c;
+  background: rgba(0, 0, 0, 0.1098039216);
   z-index: 10;
 }
-
 header .main-header .bg-img .overlay img {
   width: 100%;
   z-index: -10;
   mix-blend-mode: darken;
 }
 
+<<<<<<< HEAD
+@-webkit-keyframes movement {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes movement {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+/*======================================================================*/
+/* =====================HERO SECTION================================*/
+/*======================================================================*/
+.hero-text {
+  position: absolute;
+  top: 110%;
+  left: 7%;
+}
+.hero-text h1 {
+  color: #232631;
+  opacity: 0.7;
+  font-family: "Roboto", sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 400px;
+  z-index: 1;
+  -webkit-animation-name: movement;
+          animation-name: movement;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.hero-text .btn-group {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text .btn-group ul {
+  margin-top: 50px;
+  margin-left: 90px;
+}
+.hero-text .btn-group ul li {
+  list-style: none;
+}
+.hero-text .btn {
+  margin: 0 20px;
+  padding: 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hero-text .btn:hover {
+  transform: translateY(-5px);
+  transition: all 500ms ease;
+}
+.hero-text .btn .social {
+  display: block;
+}
+
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 /*======================================================================*/
 /* =====================ABOUT SECTION================================*/
 /*======================================================================*/
 .about-wuka {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   background: #B85863;
   position: relative;
 }
-
 .about-wuka h2 {
+<<<<<<< HEAD
+  font-size: 60px;
+  color: rgb(254, 254, 255);
+=======
   font-size: 45px;
   color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   font-weight: 700;
   background: #232631;
+<<<<<<< HEAD
+  transform: rotate(-90deg);
+=======
   position: absolute;
   padding: 10px;
   top: 40%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 }
-
 .about-wuka h2 span {
   color: #fa9b9b;
 }
-
 .about-wuka p {
   max-width: 75%;
   margin: 6rem auto;
@@ -141,32 +212,20 @@ header .main-header .bg-img .overlay img {
 .projects-section {
   background-color: #C9DADF;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 50px;
 }
-
 .projects-section .header-img {
   margin: 30px 0 0 0;
 }
-
 .projects-section .header-img img {
   border-radius: 50%;
 }
-
 .projects-section .header-img-title {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-weight: 900;
   text-align: center;
   color: #f35757;
@@ -174,11 +233,13 @@ header .main-header .bg-img .overlay img {
   padding: 10px;
   background-color: #232631;
 }
-
 .projects-section .music-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -193,24 +254,32 @@ header .main-header .bg-img .overlay img {
   width: 50%;
   height: 70px;
   margin: 20px 0;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 }
-
-.projects-section .music-link:hover {
+.projects-section .music-link li {
+  list-style: none;
+}
+.projects-section .music-link li:hover {
   background-color: #f37a7a;
 }
-
-.projects-section .music-link a {
+.projects-section .music-link li:hover span {
+  color: #ffffff;
+}
+.projects-section .music-link li a {
   text-decoration: none;
   color: black;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
 
+<<<<<<< HEAD
+=======
 .projects-section .music-link a:hover {
   color: #ffffff;
 }
 
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 /*======================================================================*/
 /* =====================FOOTER SECTION================================*/
 /*======================================================================*/
@@ -218,46 +287,34 @@ footer {
   width: 100%;
   background: #232631;
 }
-
 footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 footer .container .follow p {
   font-size: 40px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   color: #f35757;
 }
-
 footer .container .follow ul li {
   display: inline;
   padding: 0 10px;
 }
-
 footer .container .follow .attribution {
   margin: 70px;
 }
-
 footer .container .follow .attribution .attribute {
   font-size: 16px;
 }
-
 footer .container .follow .attribution .attribute a {
   text-decoration: underline;
-}
-
-footer .container .follow .attribution .attribute a:hover {
   color: white;
+}
+footer .container .follow .attribution .attribute a:hover {
+  color: #f35757;
 }
 
 /*======================================================================*/
@@ -281,16 +338,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .logo {
     font-size: 35px;
@@ -329,7 +382,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -337,6 +390,33 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
+<<<<<<< HEAD
+  @-webkit-keyframes movement {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  .hero-text h1 {
+    color: #232631;
+    opacity: 0.7;
+    font-family: "Roboto", sans-serif;
+    font-size: 150px;
+=======
   .about-wuka {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,10 +445,19 @@ footer .container .follow .attribution .attribute a:hover {
     max-width: 70%;
     margin: 6rem auto;
     padding: 50px;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: bold;
     font-size: 16px;
     background: #D9CFB9;
   }
+<<<<<<< HEAD
+  .hero-text .btn-group {
+    position: absolute;
+    top: 60%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+=======
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
@@ -385,6 +474,7 @@ footer .container .follow .attribution .attribute a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -398,6 +488,11 @@ footer .container .follow .attribution .attribute a:hover {
     height: 70px;
     margin: 20px 0;
   }
+<<<<<<< HEAD
+  .hero-text .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+=======
   .projects-section .music-link:hover {
     background-color: #fbfbfb;
   }
@@ -407,6 +502,7 @@ footer .container .follow .attribution .attribute a:hover {
   footer {
     width: 100%;
     background: #232631;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   footer .container {
     max-width: 100%;
@@ -513,24 +609,23 @@ footer .container .follow .attribution .attribute a:hover {
     mix-blend-mode: darken;
   }
   .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 60px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 30px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     top: 40%;
     background: #232631;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -546,19 +641,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -584,17 +670,13 @@ footer .container .follow .attribution .attribute a:hover {
   }
   footer .container {
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   footer .container .follow p {
     font-size: 30px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -611,7 +693,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 601px) and (max-width: 767px) {
   body {
     width: 100%;
@@ -630,16 +711,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .logo {
     font-size: 35px;
@@ -678,7 +755,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -686,25 +763,95 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  @-webkit-keyframes movement {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  .hero-text {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+  }
+  .hero-text h1 {
+    color: #232631;
+    opacity: 0.7;
+    font-family: "Roboto", sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 60%;
+    left: 3%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: 50px;
+    margin-left: 90px;
+  }
+  .hero-text .btn-group ul li {
+    list-style: none;
+  }
+  .hero-text .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 60px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 30px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     top: 40%;
     background: #232631;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -720,19 +867,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -741,6 +879,13 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
+<<<<<<< HEAD
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 70%;
     height: 70px;
@@ -757,6 +902,23 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
+<<<<<<< HEAD
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  footer .container .footer-img {
+    width: 100%;
+  }
+  footer .container .footer-img img {
+    width: 100%;
+  }
+  footer .container .follow {
+    margin-top: 30px;
+=======
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -764,11 +926,12 @@ footer .container .follow .attribution .attribute a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   footer .container .follow p {
     font-size: 30px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -785,7 +948,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 501px) and (max-width: 600px) {
   body {
     width: 100%;
@@ -804,16 +966,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .logo {
     font-size: 35px;
@@ -852,7 +1010,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -860,28 +1018,101 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  .hero-text {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+  }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .hero-text a:hover {
+    color: #f35757;
+  }
+  .hero-text h1 {
+    color: #232631;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 32%;
+    left: 5%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
+    list-style: none;
+  }
+  .hero-text .btn-group ul li a img:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn-group .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
     position: relative;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 32px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 20px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     position: absolute;
     padding: 10px;
     top: 27%;
     left: 7%;
     background: #232631;
+<<<<<<< HEAD
+    margin-left: -50px;
+    transform: rotate(-90deg);
+=======
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -897,19 +1128,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -918,6 +1140,13 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
+<<<<<<< HEAD
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 70%;
     height: 70px;
@@ -934,6 +1163,15 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
+<<<<<<< HEAD
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+  footer .container .follow {
+    margin-top: 30px;
+=======
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -941,11 +1179,12 @@ footer .container .follow .attribution .attribute a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   footer .container .follow p {
     font-size: 30px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -962,7 +1201,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 414px) and (max-width: 500px) {
   a {
     text-decoration: none;
@@ -973,16 +1211,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .social-links {
     display: none;
@@ -1019,7 +1253,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -1027,27 +1261,101 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  .hero-text {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+  }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .hero-text a:hover {
+    color: #f35757;
+  }
+  .hero-text h1 {
+    color: #232631;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 32%;
+    left: 5%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
+    list-style: none;
+  }
+  .hero-text .btn-group ul li a img:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn-group .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 40px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 20px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     position: absolute;
     top: 26%;
     right: 65%;
     background: #232631;
+<<<<<<< HEAD
+    margin-left: -80px;
+    transform: rotate(-90deg);
+=======
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -1063,19 +1371,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -1084,15 +1383,19 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 80%;
     height: 70px;
@@ -1115,13 +1418,8 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
     padding: 10px 0 0 0;
   }
@@ -1137,7 +1435,7 @@ footer .container .follow .attribution .attribute a:hover {
   footer .container .follow p {
     font-size: 32px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -1153,7 +1451,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 375px) and (max-width: 413px) {
   html {
     overflow-x: hidden;
@@ -1171,16 +1468,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .social-links {
     display: none;
@@ -1217,7 +1510,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -1225,27 +1518,102 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  .hero-text {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+  }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .hero-text a:hover {
+    color: #f35757;
+  }
+  .hero-text h1 {
+    color: #232631;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.6;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 30%;
+    left: 5%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
+    list-style: none;
+  }
+  .hero-text .btn-group ul li a img:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn-group .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 45px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 20px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     position: absolute;
     top: 24%;
     right: 61%;
     background: #232631;
+<<<<<<< HEAD
+    margin-left: -105px;
+    transform: rotate(-90deg);
+=======
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -1261,19 +1629,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -1282,15 +1641,19 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 80%;
     height: 70px;
@@ -1314,13 +1677,8 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
     padding: 0;
   }
@@ -1330,7 +1688,7 @@ footer .container .follow .attribution .attribute a:hover {
   footer .container .follow p {
     font-size: 32px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -1346,7 +1704,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 360px) and (max-width: 374px) {
   html {
     overflow-x: hidden;
@@ -1364,16 +1721,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .social-links {
     display: none;
@@ -1410,7 +1763,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -1418,27 +1771,102 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  .hero-text {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+  }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .hero-text a:hover {
+    color: #f35757;
+  }
+  .hero-text h1 {
+    color: #232631;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.6;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 30%;
+    left: 5%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
+    list-style: none;
+  }
+  .hero-text .btn-group ul li a img:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn-group .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 45px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 18px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     position: absolute;
     top: 28%;
     right: 61%;
     background: #232631;
+<<<<<<< HEAD
+    margin-left: -105px;
+    transform: rotate(-90deg);
+=======
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -1454,19 +1882,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -1475,15 +1894,19 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 80%;
     height: 70px;
@@ -1507,13 +1930,8 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
     padding: 0;
   }
@@ -1523,7 +1941,7 @@ footer .container .follow .attribution .attribute a:hover {
   footer .container .follow p {
     font-size: 32px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -1539,7 +1957,6 @@ footer .container .follow .attribution .attribute a:hover {
     text-decoration: underline;
   }
 }
-
 @media screen and (min-width: 320px) and (max-width: 359px) {
   html {
     overflow-x: hidden;
@@ -1557,16 +1974,12 @@ footer .container .follow .attribution .attribute a:hover {
     height: 100%;
   }
   header .wuka-logo {
-    background: #d8d6d6;
+    background: rgb(216, 214, 214);
     width: 100%;
     height: 80px;
     padding: 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .wuka-logo .social-links {
     display: none;
@@ -1603,7 +2016,7 @@ footer .container .follow .attribution .attribute a:hover {
   }
   header .main-header .bg-img .overlay {
     width: 100%;
-    background: #0000001c;
+    background: rgba(0, 0, 0, 0.1098039216);
     z-index: 10;
   }
   header .main-header .bg-img .overlay img {
@@ -1611,27 +2024,102 @@ footer .container .follow .attribution .attribute a:hover {
     z-index: -10;
     mix-blend-mode: darken;
   }
-  .about-wuka {
-    display: -webkit-box;
-    display: -ms-flexbox;
+<<<<<<< HEAD
+  .hero-text {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+  }
+  .hero-text a {
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bolder;
+    top: 38%;
+    left: 10%;
+    -webkit-animation-name: movement;
+            animation-name: movement;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+  }
+  .hero-text a:hover {
+    color: #f35757;
+  }
+  .hero-text h1 {
+    color: #232631;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.6;
+  }
+  .hero-text .btn-group {
+    position: absolute;
+    top: 30%;
+    left: 5%;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: column;
+  }
+  .hero-text .btn-group ul {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .hero-text .btn-group ul li {
+    margin-right: 40px;
+    display: inline;
+    list-style: none;
+  }
+  .hero-text .btn-group ul li a img:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn {
+    margin: 0 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hero-text .btn-group .btn:hover {
+    transform: translateY(-5px);
+    transition: all 500ms ease;
+  }
+  .hero-text .btn-group .btn .social {
+    display: block;
+  }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
+  .about-wuka {
+    display: flex;
+    flex-direction: row;
     background: #B85863;
   }
   .about-wuka h2 {
+<<<<<<< HEAD
+    font-size: 45px;
+    color: rgb(254, 254, 255);
+=======
     font-size: 18px;
     color: #fefeff;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     font-weight: 700;
     padding: 10px;
     position: absolute;
     top: 23%;
     right: 58%;
     background: #232631;
+<<<<<<< HEAD
+    margin-left: -105px;
+    transform: rotate(-90deg);
+=======
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
   }
   .about-wuka h2 span {
     color: #fa9b9b;
@@ -1647,19 +2135,10 @@ footer .container .follow .attribution .attribute a:hover {
   .projects-section {
     background-color: #C9DADF;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projects-section .header-img {
     margin: 50px 0;
@@ -1668,15 +2147,19 @@ footer .container .follow .attribution .attribute a:hover {
     border-radius: 50%;
   }
   .projects-section .music-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f35757;
+=======
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     border-radius: 5px;
     width: 80%;
     height: 70px;
@@ -1700,13 +2183,8 @@ footer .container .follow .attribution .attribute a:hover {
     background: #232631;
   }
   footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     margin: 0;
     padding: 0;
   }
@@ -1716,7 +2194,7 @@ footer .container .follow .attribution .attribute a:hover {
   footer .container .follow p {
     font-size: 32px;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #f35757;
   }
   footer .container .follow ul li {
@@ -1731,5 +2209,4 @@ footer .container .follow .attribution .attribute a:hover {
   footer .container .follow .attribution .attribute a {
     text-decoration: underline;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

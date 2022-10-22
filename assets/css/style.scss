@@ -77,20 +77,29 @@ header {
           width: 100%;
           height: 80px;
 
+
+          .collapse{
+
+            display: flex;
+            justify-content: center;
+          }
+
+
           .navbar-nav {
-            
            position: absolute;
            z-index: 10;
 
-
-           .nav-item {
-               
+           .nav-item {   
                .nav-link {
                    color: #000000;
                    text-transform: uppercase;
                          font-weight: 900;
                          padding: 0 10px;
                          font-size: 14px;
+
+                         &:hover {
+                            color: #f35757;
+                         }
                        
                }
            }
@@ -116,6 +125,81 @@ header {
   
 }
 
+<<<<<<< HEAD
+@keyframes movement {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(80px);
+    }
+
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+
+/*======================================================================*/
+/* =====================HERO SECTION================================*/
+/*======================================================================*/
+
+  .hero-text {    
+
+    position: absolute;
+    top: 110%;
+    left: 7%;
+        h1{
+            color: #232631;
+            opacity: 0.7;
+            font-family: 'Roboto', sans-serif;
+            font-size: 150px;
+            font-weight: bold;
+           
+            text-align: center;
+            font-size: 400px;   
+            z-index: 1;
+            animation-name: movement;
+            animation-duration: 7s;
+          
+   }
+           
+    
+        .btn-group{
+         position: absolute;
+           top: 60%;
+           left: 3%;
+           display: flex;
+           flex-direction: column;
+
+                            ul {
+                                margin-top: 50px;
+                                margin-left: 90px;
+                            
+                                li {
+                                list-style: none;       
+                           }
+
+           
+      
+                          }
+      }
+            .btn {
+               margin: 0 20px;
+               padding: 20px;
+               border: 2px solid white;
+               background: transparent;
+               color: #ffffff;
+               font-size: 20px;
+               font-weight: bold;
+
+               &:hover{
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+               
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 
 
     
@@ -192,6 +276,8 @@ p {
 
 
          .music-link {
+<<<<<<< HEAD
+=======
              display: flex;
              justify-content: center;
              align-items: center;
@@ -210,24 +296,48 @@ p {
                  background-color:#f37a7a;
              
              }
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
 
-             a {
-                 text-decoration: none;
-                 color: black;
-                 font-family: 'Archivo Black', sans-serif;
-                 font-size: 20px;
-                 font-weight: 700;
+            display: flex;
+            flex-direction: column;
+          gap : 2rem;
+            align-items: center;
+         li{
+            list-style: none;
 
+<<<<<<< HEAD
+          
+            &:hover {
+                background-color:#f37a7a;
+                color: blue;
+                span
+                 {
+                    color: #ffffff;
+     
+                 }
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: 'Archivo Black', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+
+
+         } 
+             
+=======
                    &:hover {
 
                     color:#ffffff;
                        
                    }
              }
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
          }
  
   }
-
+  }
 
   /*======================================================================*/
 /* =====================FOOTER SECTION================================*/
@@ -272,9 +382,9 @@ p {
 
            a {
                text-decoration: underline;
-
+               color: white;
                &:hover {
-                   color: white;
+                   color: #f35757;
                }
            }
        }
@@ -625,6 +735,26 @@ p {
 
     
     
+<<<<<<< HEAD
+        position: absolute;
+        top: 70%;
+        left: 20%;
+          
+            h1{
+                color: #232631;
+                opacity: 0.7;
+                font-family: 'Roboto', sans-serif;
+                font-size: 150px;
+                font-weight: bold;
+                text-align: center;
+                z-index: 1;
+                animation-name: movement;
+                animation-duration: 15s;
+              
+       }
+               
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
         
     
       .about-wuka {
@@ -855,7 +985,26 @@ p {
 
     
     
+<<<<<<< HEAD
+      .hero-text {
+
+        position: absolute;
+        top: 60%;
+        left: 30%;
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bolder;
+            top: 38%;
+            left: 10%;
+            animation-name: movement;
+            animation-duration: 7s;
+=======
         
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     
       .about-wuka {
           display: flex;
@@ -877,6 +1026,21 @@ p {
             }
     
         }
+<<<<<<< HEAD
+          
+          
+            h1{
+                color: #232631;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 3px;
+                font-size:  80px;
+                font-weight: bold;
+         
+                // text-align: center;
+                z-index: 1;
+       }
+               
+=======
         p {
             max-width: 60%;
             margin:  6rem auto;
@@ -884,6 +1048,7 @@ p {
             font-weight: bold;
             font-size: 16px;
             background: #D9CFB9;
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
         
         }
         
@@ -1297,7 +1462,96 @@ p {
     }
     
     
+<<<<<<< HEAD
+      .hero-text {
+
+        position: absolute;
+        top: 40%;
+        left: 22%;
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bolder;
+            top: 38%;
+            left: 10%;
+            animation-name: movement;
+            animation-duration: 7s;
+    
+            &:hover {
+                color: #f35757;
+            }
+        }
+          
+          
+            h1{
+                color: #232631;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 80px;
+                font-weight: bold;
+                text-align: center;
+                z-index: 1;
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 32%;
+               left: 5%;
+               display: flex;
+               flex-direction: column;
+    
+               ul {
+               margin-top: -40px;
+                margin-left: 20px;
+                li {
+                    margin-right: 40px;
+                   display: inline;
+                   list-style: none;
+    
+    
+               }
+    
+               
+               li a img:hover {
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+            }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                //    border-radius: 10px;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+                 
+              
+    
+        }
+        }
+    
+=======
    
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     
       .about-wuka {
           display: flex;
@@ -1537,7 +1791,94 @@ p {
       
     }
     
+<<<<<<< HEAD
+    
+      .hero-text {
+        position: absolute;
+                top: 45%;
+                left: 27%;
 
+        a {
+            text-decoration: underline;
+            color: #000000;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bolder;
+            top: 38%;
+            left: 10%;
+            animation-name: movement;
+            animation-duration: 7s;
+    
+            &:hover {
+                color: #f35757;
+            }
+        }
+          
+            h1{
+                color: #232631;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 60px;
+                font-weight: bold;
+        
+                text-align: center;
+                z-index: 1;
+                opacity: 0.6;
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 30%;
+               left: 5%;
+               display: flex;
+               flex-direction: column;
+    
+               ul {
+               margin-top: -40px;
+                margin-left: 20px;
+                li {
+                    margin-right: 40px;
+                   display: inline;
+                   list-style: none;
+    
+    
+               }
+    
+               
+               li a img:hover {
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+            }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+        
+    
+        }
+        }
+=======
+
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     
     
       .about-wuka {
@@ -1777,6 +2118,92 @@ p {
     }
     
     
+<<<<<<< HEAD
+      .hero-text {
+        position: absolute;
+        top: 45%;
+        left: 27%;
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bolder;
+            top: 38%;
+            left: 10%;
+            animation-name: movement;
+            animation-duration: 7s;
+    
+            &:hover {
+                color: #f35757;
+            }
+        }
+          
+            h1{
+                color: #232631;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 60px;
+                font-weight: bold;
+          
+                text-align: center;
+                z-index: 1;
+                opacity: 0.6;
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 30%;
+               left: 5%;
+               display: flex;
+               flex-direction: column;
+    
+               ul {
+               margin-top: -40px;
+                margin-left: 20px;
+                li {
+                    margin-right: 40px;
+                   display: inline;
+                   list-style: none;
+    
+    
+               }
+    
+               
+               li a img:hover {
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+            }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+        
+    
+        }
+        }
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     
     
       .about-wuka {
@@ -2015,6 +2442,93 @@ p {
     }
     
     
+<<<<<<< HEAD
+      .hero-text {
+        position: absolute;
+        top: 55%;
+        left: 25%;
+
+        a {
+            text-decoration: underline;
+            color: #000000;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bolder;
+            top: 38%;
+            left: 10%;
+            animation-name: movement;
+            animation-duration: 7s;
+    
+            &:hover {
+                color: #f35757;
+            }
+        }
+          
+            h1{
+                color: #232631;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-size: 60px;
+                font-weight: bold;
+            
+                text-align: center;
+                z-index: 1;
+                opacity: 0.6;
+       }
+               
+        
+            .btn-group{
+             position: absolute;
+               top: 30%;
+               left: 5%;
+               display: flex;
+               flex-direction: column;
+    
+               ul {
+               margin-top: -40px;
+                margin-left: 20px;
+                li {
+                    margin-right: 40px;
+                   display: inline;
+                   list-style: none;
+    
+    
+               }
+    
+               
+               li a img:hover {
+                transform: translateY(-5px);
+                transition: all 500ms ease;
+               }
+            }
+                .btn {
+                   margin: 0 20px;
+                   padding: 20px;
+                   border: 2px solid white;
+                   background: transparent;
+                   color: #ffffff;
+                   font-size: 20px;
+                   font-weight: bold;
+    
+                   &:hover{
+                    transform: translateY(-5px);
+                    transition: all 500ms ease;
+                   }
+                   
+    
+                   .social {
+                       display: block ;
+                   }
+                
+    
+               }
+        
+    
+        }
+        }
+    
+=======
+>>>>>>> 64220656edc90892a8426a51460ae9032eec9a1b
     
       .about-wuka {
           display: flex;
@@ -2108,12 +2622,7 @@ p {
          flex-direction: column-reverse;
          margin: 0;
          padding: 0;
-    
-      
-      
-      
-      
-      
+
          .follow {
         margin-top: 30px;
             
